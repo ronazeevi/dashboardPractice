@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>דשבורד מעבדות דם - מאוחדת</title>
+<style>
+:root{--bg:#f0f0f0;--card:#fff;--ink:#222;--mut:#7c7570;--line:#ededed;--main:#f36f21;--btn:#e4600f;--fc:#ffc9a3;--warn:#c0392b;--ok:#38a250;--blue:#009bdf;--navy:#30337a}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1b22;--card:#26262f;--ink:#f2f2f2;--mut:#b0a8a2;--line:#3a3a45;--main:#ff8733;--btn:#e4600f;--fc:#7a4524;--warn:#ef7b6e;--ok:#5ccf7a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Heebo","Segoe UI",Arial,sans-serif;line-height:1.5}
+header{background:linear-gradient(135deg,#ff8733,#f36f21);color:#fff;border-radius:0 0 36px 36px}.hin{max-width:1200px;margin:auto;padding:20px 16px 64px}header .note{color:#fff;opacity:.95}header .note b{color:#fff;background:rgba(0,0,0,.18);padding:1px 8px;border-radius:99px}
+h1{margin:0;font-size:1.7rem;font-weight:800;line-height:1.2}.brand{display:flex;align-items:center;gap:14px}.logo{width:60px;height:60px;border-radius:50%;object-fit:contain;background:#fff;box-shadow:0 3px 10px rgba(0,0,0,.2)}.sub{font-weight:600;opacity:.95}.logoPill{background:#fff;border-radius:18px;padding:8px 14px;box-shadow:0 3px 12px rgba(0,0,0,.2);display:flex;align-items:center}.logoPill img{height:46px;width:auto;display:block}.logoPill svg{width:46px;height:46px}.clockbox{display:flex;flex-direction:column;align-items:center;gap:4px}.clockbox svg{width:150px;height:150px;filter:drop-shadow(0 6px 12px rgba(0,0,0,.25))}.dig{background:rgba(0,0,0,.2);padding:1px 14px;border-radius:99px;font-weight:700;font-variant-numeric:tabular-nums;direction:ltr}.tf{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:6px}th[data-k]:hover{color:var(--main)}.kpi .d{color:var(--mut)}.kpi .d .up{color:var(--ok)}.kpi .d .dn{color:var(--warn)}
+.note{color:var(--mut);font-size:.85rem}
+.note b{color:var(--warn)}
+main{max-width:1200px;margin:-44px auto 0;padding:8px 16px 40px;position:relative}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:0 0 14px;background:var(--card);border-radius:24px;padding:14px 18px;box-shadow:0 4px 18px rgba(0,0,0,.07)}
+label{display:flex;flex-direction:column;font-size:.8rem;color:var(--mut);gap:3px}
+select,input{padding:9px 12px;border:1.5px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink);font-size:.95rem;min-width:130px;font-family:inherit}select:focus,input:focus{outline:2px solid var(--main);border-color:var(--main)}
+.seg{display:flex;border:1.5px solid var(--main);border-radius:99px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:transparent;color:var(--btn);padding:9px 20px;cursor:pointer;font-size:.95rem;font-weight:700;font-family:inherit}
+.seg button.on{background:var(--btn);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.card{background:var(--card);border:0;border-radius:24px;padding:18px 20px;box-shadow:0 4px 18px rgba(0,0,0,.07)}
+.kpi{border-top:5px solid var(--main)}.kpi:nth-child(2){border-top-color:var(--blue)}.kpi:nth-child(3){border-top-color:var(--ok)}.kpi:nth-child(4){border-top-color:var(--navy)}.kpi .v{font-size:1.9rem;font-weight:800}
+.kpi .l{color:var(--mut);font-size:.85rem}
+.kpi .d{font-size:.8rem}
+.up{color:var(--ok)}.dn{color:var(--warn)}
+section{margin-top:16px}
+h2{font-size:1.1rem;font-weight:800;margin:0 0 10px;color:var(--btn)}
+svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;font-size:.8rem;color:var(--mut);margin-top:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:5px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th,td{text-align:start;padding:6px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--card)}
+.scroll{max-height:340px;overflow:auto}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.grid2>*{min-width:0}
+@media(max-width:800px){.grid2{grid-template-columns:minmax(0,1fr)}}
+a.btn{display:inline-block;padding:10px 20px;border-radius:99px;background:var(--btn);color:#fff;text-decoration:none;font-size:.9rem;font-weight:700;margin-inline-end:8px;margin-top:4px}
+.tabs{display:inline-flex;margin-bottom:12px}
+.pieWrap{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+#pieBox{position:relative;width:min(100%,340px);flex:0 0 auto}
+#pie{overflow:visible}
+.slice{cursor:pointer;transition:transform .28s cubic-bezier(.3,1.6,.5,1),filter .2s;stroke:var(--card);stroke-width:2.5;outline:none}
+.slice:hover,.slice:focus-visible{filter:brightness(1.1) drop-shadow(0 3px 6px rgba(0,0,0,.3))}
+.slice.sel{filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.c1{font-size:26px;font-weight:800;fill:var(--ink);pointer-events:none}.c2{font-size:11px;fill:var(--mut);pointer-events:none}
+#tip{display:none;position:absolute;pointer-events:none;background:var(--ink);color:var(--card);padding:8px 12px;border-radius:12px;font-size:.85rem;line-height:1.5;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:5;white-space:nowrap}
+#tip .note{color:var(--card);opacity:.7}
+#pieSide{flex:1 1 280px;min-width:0}
+.pleg{display:flex;flex-wrap:wrap;gap:8px}
+.pi{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:5px 12px;border-radius:99px;cursor:pointer;font-family:inherit;font-size:.85rem}
+.pi i{width:11px;height:11px;border-radius:50%}.pi span{color:var(--mut);font-weight:700}
+.pi.on,.pi:hover{border-color:var(--main);background:var(--fc)}
+.detail{margin-top:14px;border-top:5px solid var(--main);background:var(--bg);border-radius:18px;padding:14px 16px;animation:fadein .35s both}
+.dh{display:flex;justify-content:space-between;font-size:1.05rem}.dh span{font-weight:800}
+.spark{width:100%;height:48px;overflow:visible}
+.hb{display:grid;grid-template-columns:minmax(80px,1.3fr) 2fr auto;gap:8px;align-items:center;font-size:.82rem;margin-top:4px}
+.hb>div{background:var(--line);border-radius:99px;height:9px;overflow:hidden}.hb u{display:block;height:100%;border-radius:99px;transition:width .5s}
+.hb em{font-style:normal;font-weight:700}
+.kpis{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.kp{position:relative;overflow:hidden;padding:16px 18px 14px;transition:transform .2s,box-shadow .2s}
+.kp::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:6px;background:linear-gradient(var(--c),color-mix(in srgb,var(--c) 40%,#fff))}
+.kp::after{content:"";position:absolute;inset-inline-end:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:var(--c);opacity:.08}
+.kp:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.14)}
+.kh{display:flex;align-items:center;gap:10px;margin-bottom:10px;position:relative}
+.kic{flex:0 0 auto;width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 65%,#000));display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px color-mix(in srgb,var(--c) 45%,transparent)}
+.kl{font-size:.85rem;font-weight:700;color:var(--mut);line-height:1.25}
+.kb{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;position:relative}
+.kv{font-size:2rem;font-weight:800;line-height:1.1;color:var(--ink);font-variant-numeric:tabular-nums}
+.kv small{font-size:.8rem;font-weight:700;color:var(--mut);margin-inline-start:3px}.kv{white-space:nowrap}
+.kd{font-size:.78rem;color:var(--mut);margin-top:4px}.kd .up{color:var(--ok);font-weight:700}.kd .dn{color:var(--warn);font-weight:700}
+.ksp{width:42%;max-width:130px;height:44px;flex:0 0 auto}
+.krw{position:relative;width:62px;height:62px;flex:0 0 auto}.kring{width:100%;height:100%}
+.krw span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;color:var(--ink)}
+</style>
+</head>
+<body>
+<header><div class="hin">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+    <div class="brand"><div class="logoPill"><img src="logo.png" alt="מאוחדת" onerror="this.style.display='none';document.getElementById('logoSvg').style.display='block'"><svg id="logoSvg" style="display:none" viewBox="0 0 64 64" role="img" aria-label="לוגו"><path d="M32 9C32 9 16 28 16 38a16 16 0 0 0 32 0C48 28 32 9 32 9Z" fill="#f36f21"/><rect x="29" y="31" width="6" height="18" rx="1.5" fill="#fff"/><rect x="23" y="37" width="18" height="6" rx="1.5" fill="#fff"/></svg></div><div><h1>דשבורד מעבדות דם</h1><div class="sub">תרגיל - נתוני דוגמה</div></div></div>
+    <div class="clockbox">
+      <svg id="aclock" viewBox="-70 -70 140 140" role="img" aria-label="שעון">
+        <defs><radialGradient id="face" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff1e6"/></radialGradient></defs>
+        <circle r="67" fill="url(#face)"/>
+        <circle r="60" fill="none" stroke="#ffe2cf" stroke-width="4"/>
+        <circle id="secRing" r="60" fill="none" stroke="#f36f21" stroke-width="4" stroke-linecap="round" transform="rotate(-90)" stroke-dasharray="376.99" stroke-dashoffset="376.99"/>
+        <g id="ticks"></g>
+        <text y="-17" text-anchor="middle" font-size="7.5" font-weight="700" fill="#7c7570" letter-spacing=".5">מעבדות דם</text>
+        <g transform="translate(0 24)" fill="#f36f21"><rect x="-1.6" y="-5" width="3.2" height="10" rx="1"/><rect x="-5" y="-1.6" width="10" height="3.2" rx="1"/></g>
+        <g id="hH"><line y1="8" y2="-28" stroke="#30337a" stroke-width="5" stroke-linecap="round"/></g>
+        <g id="hM"><line y1="10" y2="-43" stroke="#009bdf" stroke-width="3.5" stroke-linecap="round"/></g>
+        <g id="hS"><line y1="14" y2="-50" stroke="#e4600f" stroke-width="1.8" stroke-linecap="round"/><path d="M0 24c-2.5-3.5-3.5-6-3.5-8a3.5 3.5 0 0 1 7 0c0 2-1 4.5-3.5 8z" fill="#e4600f"/></g>
+        <circle r="5.5" fill="#fff" stroke="#f36f21" stroke-width="3"/>
+      </svg>
+      <div class="dig" id="clock"></div>
+      <div id="date" class="note"></div>
+    </div>
+  </div>
+  <div class="note"><b>נתוני דוגמה סינתטיים</b> - המעבדות, העובדים והמספרים הם המצאה להמחשה בלבד, לא נתוני מאוחדת ולא רשימה רשמית. להחלפה בנתונים אמיתיים יש לעדכן את קבצי ה-CSV. כדי להציג לוגו רשמי: לשים קובץ logo.png ליד הדשבורד.</div>
+</div></header>
+<main>
+  <div class="bar">
+    <div class="seg" id="viewSeg"><button data-v="month" class="on">חודשי</button><button data-v="year">שנתי</button></div>
+    <label>שנה<select id="year"></select></label>
+    <label>אזור<select id="region"></select></label>
+    <label>מעבדה<select id="lab"></select></label>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section class="card">
+    <h2 id="chartTitle"></h2>
+    <svg id="chart" viewBox="0 0 900 320" role="img" aria-label="גרף בדיקות"></svg>
+    <div class="legend"><span><i style="background:var(--main)"></i>בפועל</span><span><i style="background:var(--fc)"></i>תחזית</span></div>
+    <div class="note" id="fcNote"></div>
+  </section>
+
+  <section class="card">
+    <h2 id="pieTitle"></h2>
+    <div class="seg tabs" id="pieTabs"><button data-t="region" class="on">לפי אזור</button><button data-t="quarter">לפי רבעון</button><button data-t="role">עובדים לפי תפקיד</button></div>
+    <div class="pieWrap">
+      <div id="pieBox"><svg id="pie" viewBox="-130 -130 260 260" role="group" aria-label="תרשים עוגה אינטראקטיבי"></svg><div id="tip"></div></div>
+      <div id="pieSide"></div>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div class="card"><h2>מעבדות - לפי השנה שנבחרה</h2>
+      <div class="tf">
+        <label>חיפוש<input id="lq" placeholder="שם מעבדה / עיר"></label>
+        <label>סינון<select id="lf"><option value="all">כל המעבדות</option><option value="abn">% תוצאות חריגות מעל הממוצע</option><option value="slow">זמן מענה ארוך מהממוצע</option><option value="nodata">ללא נתוני בפועל</option></select></label>
+      </div>
+      <div class="note" id="labCount"></div>
+      <div class="scroll"><table id="labTbl"></table></div></div>
+    <div class="card"><h2>עובדים</h2>
+      <div class="tf">
+        <label>חיפוש<input id="q" placeholder="שם / מעבדה"></label>
+        <label>תפקיד<select id="wr"></select></label>
+      </div>
+      <div class="note" id="wCount"></div>
+      <div class="scroll"><table id="wTbl"></table></div></div>
+  </section>
+
+  <section class="card">
+    <h2>הורדת קבצים</h2>
+    <a class="btn" href="workers.csv" download>כל העובדים (CSV)</a>
+    <a class="btn" href="labs.csv" download>רשימת המעבדות (CSV)</a>
+    <a class="btn" href="monthly_tests.csv" download>בדיקות חודשיות (CSV)</a>
+  </section>
+</main>
+<script>
+const D = __DATA__;
+const MN = ['ינו','פבר','מרץ','אפר','מאי','יונ','יול','אוג','ספט','אוק','נוב','דצמ'];
+const LAST = {y:2026,m:10};
+const fmt = n => Math.round(n).toLocaleString('he-IL');
+const $ = id => document.getElementById(id);
+let view='month';
+
+const regions = ['הכל',...new Set(D.labs.map(l=>l[3]))];
+$('region').innerHTML = regions.map(r=>`<option>${r}</option>`).join('');
+$('year').innerHTML = [2023,2024,2025,2026,2027].map(y=>`<option ${y==2026?'selected':''}>${y}</option>`).join('');
+function fillLabs(){
+  const r=$('region').value;
+  $('lab').innerHTML = '<option value="-1">כל המעבדות</option>'+D.labs.map((l,i)=>[l,i]).filter(([l])=>r=='הכל'||l[3]==r).map(([l,i])=>`<option value="${i}">${l[1]}</option>`).join('');
+}
+fillLabs();
+
+function selLabs(){
+  const r=$('region').value, lab=+$('lab').value;
+  return new Set(D.labs.map((l,i)=>i).filter(i=>lab>=0?i==lab:(r=='הכל'||D.labs[i][3]==r)));
+}
+
+// monthly series (actual) keyed y*12+m-1, aggregated for selection
+function series(sel){
+  const t={},tat={},ab={};
+  for(const [li,y,m,n,h,a] of D.rows){ if(!sel.has(li))continue; const k=y*12+m-1;
+    t[k]=(t[k]||0)+n; tat[k]=(tat[k]||0)+h*n; ab[k]=(ab[k]||0)+a*n; }
+  return {t,tat,ab};
+}
+function forecast(t){
+  const lastK=LAST.y*12+LAST.m-1;
+  let cur=0,prev=0;
+  for(let i=0;i<12;i++){cur+=t[lastK-i]||0;prev+=t[lastK-12-i]||0;}
+  const g=prev>0?cur/prev:1;
+  const f={};
+  for(let k=lastK+1;k<=2027*12+11;k++){ f[k]=(t[k-12]??f[k-12]??0)*g; }
+  return {f,g};
+}
+
+function render(){
+  const sel=selLabs(), y=+$('year').value;
+  const {t,tat,ab}=series(sel), {f,g}=forecast(t);
+  const val=k=>t[k]!=null?{a:t[k],f:0}:{a:0,f:f[k]||0};
+  let items=[];
+  if(view=='month'){
+    for(let m=0;m<12;m++){const v=val(y*12+m);items.push({l:MN[m],...v});}
+    $('chartTitle').textContent='בדיקות דם לפי חודש - '+y;
+  } else {
+    for(let yy=2023;yy<=2027;yy++){let a=0,fc=0;for(let m=0;m<12;m++){const v=val(yy*12+m);a+=v.a;fc+=v.f;}items.push({l:String(yy),a,f:fc});}
+    $('chartTitle').textContent='בדיקות דם לפי שנה (2026-2027 כוללות תחזית)';
+  }
+  drawChart(items);
+  drawPie(sel,y,t,f);
+  $('fcNote').textContent=`תחזית: מגמת 12 החודשים האחרונים (${g>=1?'+':''}${((g-1)*100).toFixed(1)}%) מוחלת על אותו חודש אשתקד, עד דצמבר 2027. הערכה פשוטה בלבד.`;
+
+  // KPIs for the selected year: ACTUAL months only; forecast shown separately
+  const ks=[...Array(12)].map((_,m)=>y*12+m);
+  let tot=0,fcTot=0,tw=0,aw=0,prevSame=0,nAct=0;
+  for(const k of ks){ if(t[k]!=null){tot+=t[k];tw+=tat[k];aw+=ab[k];nAct++;prevSame+=t[k-12]||0;} else fcTot+=f[k]||0; }
+  const staff=D.workers.filter(w=>sel.has(w[3])).length;
+  const delta=prevSame>0?(tot/prevSame-1)*100:null;
+  const d1=[];
+  if(delta!=null)d1.push(`<span class="${delta>=0?'up':'dn'}">${delta>=0?'▲':'▼'} ${Math.abs(delta).toFixed(1)}% מול אותם חודשים ב-${y-1}</span>`);
+  if(fcTot)d1.push(`תחזית לכל ${y}: ${fmt(tot+fcTot)}`);
+  const monthly=[...Array(12)].map((_,m)=>t[y*12+m]??null);
+  const regs=new Set([...sel].map(i=>D.labs[i][3])).size;
+  const ic=p=>`<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+  const ICON={drop:ic('<path d="M12 3C12 3 5.5 10.5 5.5 15a6.5 6.5 0 0 0 13 0C18.5 10.5 12 3 12 3z"/>'),clock:ic('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),flag:ic('<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>'),lab:ic('<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>'),people:ic('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/>')};
+  const spark=(arr,c)=>{const pts=arr.map((x,i)=>x==null?null:[i*100/11,x]).filter(Boolean);if(pts.length<2)return '';
+    const ys=pts.map(p=>p[1]),mx=Math.max(...ys),mn=Math.min(...ys);
+    const P=pts.map(([x,v])=>`${x.toFixed(1)},${(30-(v-mn)/((mx-mn)||1)*26).toFixed(1)}`);
+    return `<svg viewBox="0 0 100 34" class="ksp" preserveAspectRatio="none"><polygon points="${pts[0][0]},34 ${P.join(' ')} ${pts[pts.length-1][0].toFixed(1)},34" fill="${c}" opacity=".16"/><polyline points="${P.join(' ')}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>`;};
+  const ring=(fr,c,mid)=>`<div class="krw"><svg viewBox="0 0 44 44" class="kring"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round" stroke-dasharray="113.1" stroke-dashoffset="${(113.1*(1-Math.min(1,Math.max(0,fr)))).toFixed(1)}" transform="rotate(-90 22 22)"/></svg><span>${mid}</span></div>`;
+  const hrs=tot?tw/tot:null, pct=tot?aw/tot:null;
+  const cards=[
+    {c:'#f36f21',ic:'drop',l:tot?`בדיקות דם ב-${y} (בפועל${nAct<12?', '+nAct+' חודשים':''})`:`בדיקות דם ב-${y}`,
+      v:tot||null,txt:'אין נתוני בפועל',d:tot?d1.join('<br>'):`תחזית: ${fmt(fcTot)}`,vis:spark(monthly,'#f36f21'),wide:true},
+    {c:'#009bdf',ic:'clock',l:'זמן מענה ממוצע',v:hrs,dec:1,suf:' שעות',d:'מקבלת הדגימה ועד פרסום התוצאה',vis:hrs!=null?ring(hrs/24,'#009bdf','/24ש׳'):''},
+    {c:'#38a250',ic:'flag',l:'% בדיקות עם תוצאה חריגה',v:pct,dec:1,suf:'%',d:'תוצאה מחוץ לטווח התקין, מתוך כלל הבדיקות',vis:pct!=null?ring(pct/100,'#38a250',Math.round(pct)+'%'):''},
+    {c:'#30337a',ic:'lab',l:'מעבדות',v:sel.size,d:`ב-${regs} אזורים`},
+    {c:'#eb7e07',ic:'people',l:'עובדים',v:staff,d:`ממוצע ${(staff/Math.max(1,sel.size)).toFixed(1)} עובדים למעבדה`}
+  ];
+  $('kpis').innerHTML=cards.map(k=>`<div class="card kp${k.wide?' kwide':''}" style="--c:${k.c}"><div class="kh"><span class="kic">${ICON[k.ic]}</span><span class="kl">${k.l}</span></div>`+
+    `<div class="kb"><div><div class="kv" ${k.v!=null?`data-v="${k.v}" data-dec="${k.dec||0}" data-suf="${k.suf||''}"`:''}>${k.v!=null?'':k.txt||'-'}</div><div class="kd">${k.d||''}</div></div>${k.vis||''}</div></div>`).join('');
+  document.querySelectorAll('#kpis .kv[data-v]').forEach(el=>{
+    const to=+el.dataset.v, dec=+el.dataset.dec, suf=el.dataset.suf, t0=performance.now();
+    const show=x=>el.innerHTML=(dec?x.toFixed(dec):fmt(x))+(suf?`<small>${suf}</small>`:"");
+    (function step(now){const p=Math.min(1,(now-t0)/700),e=1-Math.pow(1-p,3);show(to*e);if(p<1)requestAnimationFrame(step);else show(to);})(t0);
+  });
+
+  renderTables(sel,y);
+}
+
+let labSort={k:'n',d:-1}, wSort={k:'id',d:1};
+const wr=$('wr');
+wr.innerHTML='<option value="">כל התפקידים</option>'+[...new Set(D.workers.map(w=>w[2]))].map(r=>`<option>${r}</option>`).join('');
+function th(label,k,s,tip){return `<th data-k="${k}" title="${esc(tip||'לחצי למיון')}" style="cursor:pointer">${label}${s.k==k?(s.d>0?' ▲':' ▼'):''}</th>`;}
+function renderTables(sel,y){
+  const per={};
+  for(const [li,yy,m,n,h,a] of D.rows){ if(!sel.has(li)||yy!=y)continue; const p=per[li]||(per[li]={n:0,h:0,a:0}); p.n+=n;p.h+=h*n;p.a+=a*n; }
+  const sc={}; D.workers.forEach(w=>sc[w[3]]=(sc[w[3]]||0)+1);
+  let rows=[...sel].map(i=>{const p=per[i]||{n:0,h:0,a:0};return {i,n:p.n,h:p.n?p.h/p.n:null,a:p.n?p.a/p.n:null,s:sc[i]||0,name:D.labs[i][1],reg:D.labs[i][3],city:D.labs[i][2]};});
+  const withData=rows.filter(r=>r.n), tN=withData.reduce((s,r)=>s+r.n,0);
+  const avgH=tN?withData.reduce((s,r)=>s+r.h*r.n,0)/tN:0, avgA=tN?withData.reduce((s,r)=>s+r.a*r.n,0)/tN:0;
+  const lq=$('lq').value.trim(), lf=$('lf').value;
+  rows=rows.filter(r=>(!lq||(r.name+r.city).includes(lq))&&(lf=='all'||(lf=='abn'&&r.n&&r.a>avgA)||(lf=='slow'&&r.n&&r.h>avgH)||(lf=='nodata'&&!r.n)));
+  const key={n:'n',h:'h',a:'a',s:'s',name:'name',reg:'reg'}[labSort.k];
+  rows.sort((x,z)=>{const A=x[key],B=z[key];if(A==null)return 1;if(B==null)return -1;return (typeof A=='string'?A.localeCompare(B,'he'):A-B)*labSort.d;});
+  $('labCount').textContent=`מוצגות ${rows.length} מעבדות. ממוצע לפי בדיקות: ${avgH.toFixed(1)} שעות, ${avgA.toFixed(1)}% חריגות`;
+  $('labTbl').innerHTML='<tr>'+th('מעבדה','name',labSort)+th('אזור','reg',labSort)+th('בדיקות','n',labSort)+th('שעות מענה','h',labSort,'ממוצע שעות מקבלת הדגימה ועד פרסום התוצאה')+th('% חריגות','a',labSort,'אחוז הבדיקות עם תוצאה מחוץ לטווח התקין')+th('עובדים','s',labSort)+'</tr>'+
+    rows.map(r=>`<tr><td>${esc(r.name)}</td><td>${r.reg}</td><td>${r.n?fmt(r.n):'-'}</td><td>${r.h!=null?r.h.toFixed(1):'-'}</td><td>${r.a!=null?r.a.toFixed(1)+'%':'-'}</td><td>${r.s}</td></tr>`).join('');
+
+  const q=$('q').value.trim(), role=$('wr').value;
+  let ws=D.workers.filter(w=>sel.has(w[3])&&(!role||w[2]==role)&&(!q||(w[1]+w[2]+D.labs[w[3]][1]).includes(q)));
+  const wk={id:0,name:1,role:2,lab:3};
+  ws.sort((a,b)=>{const A=wSort.k=='lab'?D.labs[a[3]][1]:a[wk[wSort.k]],B=wSort.k=='lab'?D.labs[b[3]][1]:b[wk[wSort.k]];return String(A).localeCompare(String(B),'he')*wSort.d;});
+  $('wCount').textContent=`${ws.length} עובדים${ws.length>200?' (מוצגים 200 הראשונים - ההורדה כוללת את כולם)':''}`;
+  $('wTbl').innerHTML='<tr>'+th('מס׳','id',wSort)+th('שם','name',wSort)+th('תפקיד','role',wSort)+th('מעבדה','lab',wSort)+'</tr>'+
+    ws.slice(0,200).map(w=>`<tr><td>${w[0]}</td><td>${esc(w[1])}</td><td>${esc(w[2])}</td><td>${esc(D.labs[w[3]][1])}</td></tr>`).join('');
+}
+$('labTbl').onclick=e=>{const k=e.target.closest('th')?.dataset.k;if(!k)return;labSort=labSort.k==k?{k,d:-labSort.d}:{k,d:(k=='name'||k=='reg')?1:-1};render();};
+$('wTbl').onclick=e=>{const k=e.target.closest('th')?.dataset.k;if(!k)return;wSort=wSort.k==k?{k,d:-wSort.d}:{k,d:1};render();};
+['lq','q'].forEach(id=>$(id).oninput=render);
+['lf','wr'].forEach(id=>$(id).onchange=render);
+
+const PIEC=['#f36f21','#009bdf','#38a250','#30337a','#eb7e07','#8a8480','#ffc9a3'];
+let pieTab='region', pieSel=null, pieCtx=null;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function arcPath(a0,a1,r0,r1){
+  if(a1-a0>=2*Math.PI-1e-3)a1=a0+2*Math.PI-1e-3;
+  const p=(a,r)=>`${(r*Math.cos(a)).toFixed(2)} ${(r*Math.sin(a)).toFixed(2)}`,L=a1-a0>Math.PI?1:0;
+  return `M${p(a0,r1)}A${r1} ${r1} 0 ${L} 1 ${p(a1,r1)}L${p(a1,r0)}A${r0} ${r0} 0 ${L} 0 ${p(a0,r0)}Z`;
+}
+function pieEntries(sel,y,t,f){
+  const v=k=>t[k]??f[k]??0, out=[];
+  if(pieTab=='region'){
+    const by={},labs={};
+    for(const [li,yy,m,n] of D.rows){ if(!sel.has(li)||yy!=y)continue; const r=D.labs[li][3]; by[r]=(by[r]||0)+n; (labs[r]=labs[r]||{})[li]=(labs[r][li]||0)+n; }
+    Object.entries(by).sort((a,b)=>b[1]-a[1]).forEach(([r,val])=>out.push({key:r,val,
+      bars:Object.entries(labs[r]).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([li,n])=>[D.labs[li][2]+' '+(D.labs[li][1].match(/\d+$/)||[''])[0],n]),
+      barsTitle:"מעבדות מובילות באזור",spark:null,region:r}));
+    out.forEach(e=>{ // monthly trend for the region (actual only)
+      const arr=Array(12).fill(0);
+      for(const [li,yy,m,n] of D.rows){ if(sel.has(li)&&yy==y&&D.labs[li][3]==e.region)arr[m-1]+=n; }
+      e.spark=arr; });
+    out.unit='בדיקות'; out.title='התפלגות בדיקות לפי אזור - '+y+(y==2026?' (עד אוקטובר)':'');
+  } else if(pieTab=='quarter'){
+    const qn=['רבעון 1 (ינו-מרץ)','רבעון 2 (אפר-יונ)','רבעון 3 (יול-ספט)','רבעון 4 (אוק-דצמ)'];
+    for(let q=0;q<4;q++){let val=0,bars=[],fc=false;
+      for(let m=q*3;m<q*3+3;m++){const k=y*12+m;if(t[k]==null)fc=true;const x=v(k);val+=x;bars.push([MN[m]+(t[k]==null?' (תחזית)':''),x]);}
+      out.push({key:qn[q]+(fc?' *':''),val,bars,barsTitle:'חודשים ברבעון',spark:null});}
+    out.unit='בדיקות'; out.title='התפלגות בדיקות לפי רבעון - '+y+' (* כולל תחזית)';
+  } else {
+    const by={},labs={};
+    D.workers.forEach(w=>{ if(!sel.has(w[3]))return; by[w[2]]=(by[w[2]]||0)+1; (labs[w[2]]=labs[w[2]]||{})[w[3]]=(labs[w[2]][w[3]]||0)+1; });
+    Object.entries(by).sort((a,b)=>b[1]-a[1]).forEach(([r,val])=>out.push({key:r,val,
+      bars:Object.entries(labs[r]).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([li,n])=>[D.labs[li][1],n]),
+      barsTitle:'מעבדות עם הכי הרבה עובדים בתפקיד',spark:null}));
+    out.unit='עובדים'; out.title='התפלגות עובדים לפי תפקיד';
+  }
+  return out;
+}
+function drawPie(sel,y,t,f){
+  pieCtx={sel,y,t,f};
+  const ent=pieEntries(sel,y,t,f), tot=ent.reduce((s,e)=>s+e.val,0), unit=ent.unit;
+  $('pieTitle').textContent=ent.title;
+  if(!tot){$('pie').innerHTML='';$('pieSide').innerHTML='<div class="note">אין נתוני בפועל לשנה זו - בחרי שנה אחרת או תצוגת רבעון</div>';return;}
+  if(pieSel!=null&&!ent.some(e=>e.key==pieSel))pieSel=null;
+  let a0=-Math.PI/2,s='',i=0;
+  for(const e of ent){
+    const a1=a0+e.val/tot*2*Math.PI, mid=(a0+a1)/2, c=PIEC[i%PIEC.length], on=e.key==pieSel;
+    const dx=Math.cos(mid)*(on?12:0), dy=Math.sin(mid)*(on?12:0);
+    e.color=c; e.pct=e.val/tot*100;
+    s+=`<path class="slice${on?' sel':''}" data-i="${i}" tabindex="0" role="button" aria-label="${esc(e.key)} ${e.pct.toFixed(1)}%" d="${arcPath(a0,a1,64,112)}" fill="${c}" style="transform:translate(${dx}px,${dy}px)"/>`;
+    a0=a1;i++;
+  }
+  const sel_=ent.find(e=>e.key==pieSel);
+  s+=`<text class="c1" y="-6" text-anchor="middle">${sel_?fmt(sel_.val):fmt(tot)}</text><text class="c2" y="14" text-anchor="middle">${sel_?esc(sel_.key.replace(' *','')):'סה״כ '+unit}</text>`;
+  if(sel_)s+=`<text class="c2" y="32" text-anchor="middle">${sel_.pct.toFixed(1)}%</text>`;
+  $('pie').innerHTML=s;
+  const tip=$('tip'), wrap=$('pieBox');
+  $('pie').querySelectorAll('.slice').forEach(p=>{
+    const e=ent[+p.dataset.i];
+    const show=ev=>{const r=wrap.getBoundingClientRect();
+      tip.innerHTML=`<b style="color:${e.color}">●</b> <b>${esc(e.key)}</b><br>${fmt(e.val)} ${unit} · ${e.pct.toFixed(1)}%<br><span class="note">לחצי לפירוט</span>`;
+      tip.style.display='block';tip.style.left=Math.min(ev.clientX-r.left+14,r.width-170)+'px';tip.style.top=(ev.clientY-r.top+14)+'px';};
+    p.onmousemove=show;p.onmouseenter=show;p.onmouseleave=()=>tip.style.display='none';
+    p.onclick=()=>{pieSel=pieSel==e.key?null:e.key;tip.style.display='none';drawPie(sel,y,t,f);};
+    p.onkeydown=ev=>{if(ev.key=='Enter'||ev.key==' '){ev.preventDefault();p.onclick();}};
+  });
+  // side panel: legend + detail
+  let h='<div class="pleg">'+ent.map(e=>`<button class="pi${e.key==pieSel?' on':''}" data-k="${esc(e.key)}"><i style="background:${e.color}"></i>${esc(e.key)}<span>${e.pct.toFixed(1)}%</span></button>`).join('')+'</div>';
+  if(sel_){
+    const mx=Math.max(...sel_.bars.map(b=>b[1]),1);
+    h+=`<div class="detail" style="border-top-color:${sel_.color}"><div class="dh"><b>${esc(sel_.key)}</b><span>${fmt(sel_.val)} ${unit}</span></div>`+
+      `<div class="note">${sel_.pct.toFixed(1)}% מהסך הכל</div>`;
+    if(sel_.spark){const m2=Math.max(...sel_.spark,1);
+      const pts=sel_.spark.map((v,k)=>`${(k*(200/11)).toFixed(1)},${(44-v/m2*40).toFixed(1)}`).join(' ');
+      h+=`<div class="note" style="margin-top:8px">מגמה חודשית</div><svg viewBox="0 0 200 48" class="spark"><polyline points="${pts}" fill="none" stroke="${sel_.color}" stroke-width="2.5" stroke-linejoin="round"/>`+
+        sel_.spark.map((v,k)=>`<circle cx="${(k*(200/11)).toFixed(1)}" cy="${(44-v/m2*40).toFixed(1)}" r="2.5" fill="${sel_.color}"><title>${MN[k]}: ${fmt(v)}</title></circle>`).join('')+'</svg>';}
+    h+=`<div class="note" style="margin-top:8px">${sel_.barsTitle}</div>`+sel_.bars.map(([n,v])=>`<div class="hb"><span>${esc(n)}</span><div><u style="width:${v/mx*100}%;background:${sel_.color}"></u></div><em>${fmt(v)}</em></div>`).join('')+'</div>';
+  } else h+='<div class="note" style="margin-top:10px">לחצי על פלח בעוגה (או על פריט ברשימה) כדי לראות פירוט.</div>';
+  $('pieSide').innerHTML=h;
+  $('pieSide').querySelectorAll('.pi').forEach(b=>b.onclick=()=>{pieSel=pieSel==b.dataset.k?null:b.dataset.k;drawPie(sel,y,t,f);});
+}
+document.querySelectorAll('#pieTabs button').forEach(b=>b.onclick=()=>{
+  pieTab=b.dataset.t;pieSel=null;document.querySelectorAll('#pieTabs button').forEach(x=>x.classList.toggle('on',x==b));
+  if(pieCtx)drawPie(pieCtx.sel,pieCtx.y,pieCtx.t,pieCtx.f);});
+(function buildTicks(){
+  let s='';
+  for(let i=0;i<60;i++){
+    if(i%5==0)s+=`<path transform="rotate(${i*6}) ${i%15==0?'scale(1.25)':''}" d="M0 -51c-2.5 3.5-3.5 6-3.5 8a3.5 3.5 0 0 0 7 0c0-2-1-4.5-3.5-8z" fill="${i%15==0?'#f36f21':'#ff8733'}"/>`;
+    else s+=`<circle cx="0" cy="-53" r="1" fill="#b9aea6" transform="rotate(${i*6})"/>`;
+  }
+  $('ticks').innerHTML=s;
+})();
+let lastDate='';
+function tick(){
+  const d=new Date(), ms=d.getMilliseconds(), sec=d.getSeconds()+ms/1000, min=d.getMinutes()+sec/60, hr=d.getHours()%12+min/60;
+  $('hS').setAttribute('transform',`rotate(${sec*6})`);
+  $('hM').setAttribute('transform',`rotate(${min*6})`);
+  $('hH').setAttribute('transform',`rotate(${hr*30})`);
+  $('secRing').style.strokeDashoffset=376.99*(1-sec/60);
+  const t=d.toLocaleTimeString('he-IL',{hour12:false});
+  if($('clock').textContent!==t){
+    $('clock').textContent=t;
+    const ds=d.toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+    if(ds!==lastDate){$('date').textContent=ds;lastDate=ds;}
+  }
+  requestAnimationFrame(tick);
+}
+tick();
+
+function drawChart(items){
+  const W=900,H=320,pl=60,pb=30,pt=15,max=Math.max(...items.map(i=>i.a+i.f),1)*1.1;
+  const bw=(W-pl-10)/items.length;
+  let s='';
+  for(let i=0;i<=4;i++){const v=max*i/4,y=H-pb-(H-pb-pt)*i/4;
+    s+=`<line x1="${pl}" x2="${W-10}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${pl-6}" y="${y+4}" text-anchor="end" font-size="11" fill="var(--mut)">${fmt(v)}</text>`;}
+  items.forEach((it,i)=>{
+    const x=W-10-(i+1)*bw+bw*0.15,w=bw*0.7,ch=H-pb-pt;
+    const ha=it.a/max*ch,hf=it.f/max*ch;
+    s+=`<rect x="${x}" y="${H-pb-ha}" width="${w}" height="${ha}" rx="3" fill="var(--main)"><title>${it.l}: ${fmt(it.a)}</title></rect>`;
+    if(hf>0)s+=`<rect x="${x}" y="${H-pb-ha-hf}" width="${w}" height="${hf}" rx="3" fill="var(--fc)"><title>${it.l} תחזית: ${fmt(it.f)}</title></rect>`;
+    s+=`<text x="${x+w/2}" y="${H-10}" text-anchor="middle" font-size="12" fill="var(--mut)">${it.l}</text>`;
+  });
+  $('chart').innerHTML=s;
+}
+
+document.querySelectorAll('#viewSeg button').forEach(b=>b.onclick=()=>{
+  view=b.dataset.v;document.querySelectorAll('#viewSeg button').forEach(x=>x.classList.toggle('on',x==b));render();});
+$('region').onchange=()=>{fillLabs();render();};
+['lab','year'].forEach(id=>$(id).onchange=render);
+render();
+</script>
+</body>
+</html>

@@ -7,6 +7,12 @@
 |---|---|
 | `spec.md` | אפיון הפרויקט (נכתב עם Claude) - מקור האמת לדרישות ולהגדרות המדדים |
 | `practice.md` | הנחיות העבודה והעדכון (המסמך הזה) |
+| `dashboard/dashboard.html` | הדשבורד עצמו - קובץ HTML יחיד, נפתח בדפדפן |
+| `dashboard/workers.csv`, `labs.csv`, `monthly_tests.csv` | קבצי הנתונים (נתוני דוגמה סינתטיים) |
+| `dashboard/generate-data.ps1`, `dashboard.template.html`, `seed/` | יצירת הנתונים והדשבורד מחדש (PowerShell) |
+| `.gitignore` | מונע העלאה של `logo.png` (סימן מסחרי של צד שלישי) |
+
+להרצה מחדש: `powershell -NoProfile -ExecutionPolicy Bypass -File dashboard/generate-data.ps1`
 
 ## כללי זהב
 1. **commit קטן אחרי כל שינוי משמעותי** - לא לצבור שינויים רבים ל-commit אחד.
@@ -41,7 +47,7 @@ git push -u origin main
 ## בדיקה לפני כל push
 - [ ] `git status` נקי, אין קבצים שלא התכוונתי להעלות.
 - [ ] `git log --oneline` מציג את ההיסטוריה הצפויה.
-- [ ] הקבצים בריפו הם רק מה שצריך.
+- [ ] הקבצים בריפו הם רק מה שצריך, ו-`logo.png` לא ברשימת הקבצים (`git ls-files`).
 - [ ] אין מידע רגיש, נתונים אמיתיים או לוגו של צד שלישי.
 - [ ] המספרים שב-`spec.md` תואמים לדשבורד (אומתו מול קבצי ה-CSV).
 
