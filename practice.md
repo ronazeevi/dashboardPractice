@@ -1,30 +1,57 @@
-# Practice: תרגול בניית הדשבורד
+# Practice: הנחיות הפרויקט - שמירה ועדכון ב-GitHub
 
-תרגיל 4 - בניית דשבורד עם Claude Code לפי `spec.md`.
+מסמך זה מגדיר איך שומרים, מעדכנים ומעלים ל-GitHub את פרויקט הדשבורד "מעבדות דם - מאוחדת". האפיון נמצא ב-`spec.md`.
 
-## שלבים
-1. קריאת `spec.md` והבנת הדרישות.
-2. יצירת נתוני דוגמה (CSV) - `generate-data.ps1`.
-3. בניית `dashboard.template.html` (גרפים, מסננים, תחזית).
-4. הוספת שעון וגרף עוגה (בקשה נוספת באמצע העבודה).
-5. הרצה ובדיקה בדפדפן.
+## מבנה הריפו
+| קובץ | תפקיד |
+|---|---|
+| `spec.md` | אפיון הפרויקט (נכתב עם Claude) - מקור האמת לדרישות ולהגדרות המדדים |
+| `practice.md` | הנחיות העבודה והעדכון (המסמך הזה) |
 
-## פרומפט מקורי
-> create dashboard for kupat holim meuhedet that include the blood laboratory and give an option to see the status in the year and per month and manage the future; create csv file that include all the workers and all the laboratories in the country
+## כללי זהב
+1. **commit קטן אחרי כל שינוי משמעותי** - לא לצבור שינויים רבים ל-commit אחד.
+2. **האפיון מתעדכן ראשון.** שינוי בדרישה, בהגדרת מדד או בעיצוב נכנס קודם ל-`spec.md`, ואז ל-commit.
+3. **לא מעלים (push) בלי אישור מפורש** מרונה. ההעלאה היא פעולה שנראית מחוץ למחשב.
+4. **לא מעלים נתונים אמיתיים או רגישים.** נתוני הדוגמה סינתטיים ומסומנים ככאלה.
+5. **לא מעלים לוגו או סימן מסחרי של גוף אחר** לריפו ציבורי (הלוגו של מאוחדת נשאר מקומי בלבד).
+6. **לא מעלים סיסמאות, מפתחות או טוקנים.**
 
-תוספת: "the dashboard need to include a clock and pie".
-
-## איך מריצים
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File dashboard-output\generate-data.ps1
+## מהלך עבודה לעדכון
+```bash
+git status
+git add spec.md practice.md
+git commit -m "Spec: <מה השתנה ולמה>"
+git push
 ```
-ואז פותחים את `dashboard-output\dashboard.html` בדפדפן.
 
-## לקחים
-- אין Python/Node במחשב - נעשה שימוש ב-PowerShell.
-- PowerShell 5.1 מקלקל עברית בתוך קובץ `.ps1` ללא BOM, לכן טקסט עברי נשמר בקבצי `seed/` ונקרא ב-UTF-8.
-- נתוני דוגמה חייבים להיות מסומנים כסינתטיים.
+## פורמט הודעות commit
+- שורה ראשונה קצרה, באנגלית, עם קידומת: `Spec:` לשינוי באפיון, `Practice:` לשינוי בהנחיות, `Docs:` לתיקון ניסוח.
+- דוגמאות: `Spec: add metric definitions`, `Practice: add GitHub workflow`.
+- כש-Claude יוצר את ה-commit, נוספת שורת `Co-Authored-By`.
 
-## שאלות לתרגול
-- איך מחליפים את הנתונים הסינתטיים בייצוא אמיתי?
-- איך משפרים את התחזית (עונתיות, רגרסיה)?
+## יצירה והעלאה ראשונה ל-GitHub
+```bash
+git remote add origin https://github.com/<username>/dashboardPractice.git
+git branch -M main
+git push -u origin main
+```
+- אם הריפו **ציבורי** - מספיק לשתף את הקישור.
+- אם הריפו **פרטי** - להוסיף את המרצה ב-Settings, Collaborators, Add people.
+
+## בדיקה לפני כל push
+- [ ] `git status` נקי, אין קבצים שלא התכוונתי להעלות.
+- [ ] `git log --oneline` מציג את ההיסטוריה הצפויה.
+- [ ] הקבצים בריפו הם רק מה שצריך.
+- [ ] אין מידע רגיש, נתונים אמיתיים או לוגו של צד שלישי.
+- [ ] המספרים שב-`spec.md` תואמים לדשבורד (אומתו מול קבצי ה-CSV).
+
+## הנחיות ל-Claude בפרויקט זה
+- לשמור על העובדות בלבד. לא להמציא מספרים, ולסמן במפורש נתוני דוגמה.
+- לאמת מספרים מול קבצי המקור לפני שמדווחים עליהם.
+- לשאול לפני פעולה בלתי הפיכה או כזו שמשפיעה מחוץ למחשב (push, פרסום, שיתוף).
+- בסיום כל שלב: לעדכן את `spec.md` אם הדרישות השתנו, ולהציע commit.
+
+## מה התלמדתי בתהליך
+- אין Python/Node במחשב, ולכן נתוני הדוגמה נוצרו ב-PowerShell.
+- PowerShell 5.1 מקלקל עברית בתוך קובץ `.ps1` ללא BOM, ולכן טקסט עברי נשמר בקבצי טקסט נפרדים ונקרא ב-UTF-8.
+- נתוני דוגמה חייבים להיות מסומנים כסינתטיים, וכל מספר מאומת מול הקובץ.
