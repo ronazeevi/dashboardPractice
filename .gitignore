@@ -1,1 +1,5 @@
 logo.png
+
+.env
+*.env
+!.env.example
