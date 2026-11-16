@@ -1,0 +1,968 @@
+{
+    "בית שמש":  [
+                    {
+                        "name":  "קניון השדרה - מכון רנטגן/הדמיה - בית שמש",
+                        "address":  "רחוב מנחם פרוש פורוש 1, בית שמש, ישראל",
+                        "lat":  31.7091294,
+                        "lng":  34.9895834,
+                        "phone":  "+972 2-595-3200",
+                        "rating":  null,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%A0%D7%99%D7%95%D7%9F%20%D7%94%D7%A9%D7%93%D7%A8%D7%94%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%91%D7%99%D7%AA%20%D7%A9%D7%9E%D7%A9\u0026query_place_id=ChIJ46Sp1eXFAhUR-RzkHq8PDhU"
+                    },
+                    {
+                        "name":  "Y.R.A Smile רשת מרפאות שיניים לשיקום פה ואסתטיקה",
+                        "address":  "יחזקאל הנביא 27, אור שמח 15, בית שמש, 9914079, ישראל",
+                        "lat":  31.7390365,
+                        "lng":  34.9949818,
+                        "phone":  "+972 2-628-7212",
+                        "rating":  2.5,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=Y.R.A%20Smile%20%D7%A8%D7%A9%D7%AA%20%D7%9E%D7%A8%D7%A4%D7%90%D7%95%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%9C%D7%A9%D7%99%D7%A7%D7%95%D7%9D%20%D7%A4%D7%94%20%D7%95%D7%90%D7%A1%D7%AA%D7%98%D7%99%D7%A7%D7%94\u0026query_place_id=ChIJl_lil-bDAhURlQNGZynWwec"
+                    }
+                ],
+    "נתניה":  [
+                  {
+                      "name":  "Maccabi Health Service",
+                      "address":  "נתניה, ישראל",
+                      "lat":  32.306555,
+                      "lng":  34.868911,
+                      "phone":  "",
+                      "rating":  5,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=Maccabi%20Health%20Service\u0026query_place_id=ChIJIZNT6JM_HRUR_gW9R5Bd4AM"
+                  },
+                  {
+                      "name":  "RS NESS - Solutions for Life Science Companies",
+                      "address":  "שדרות טום לנטוס 8, נתניה, ישראל",
+                      "lat":  32.3115684,
+                      "lng":  34.8697948,
+                      "phone":  "+972 77-200-6569",
+                      "rating":  5,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=RS%20NESS%20-%20Solutions%20for%20Life%20Science%20Companies\u0026query_place_id=ChIJ7Ywzw1lBHRURv3PuYMBN-oc"
+                  },
+                  {
+                      "name":  "מרכז השתלות שיניים בנתניה-דייר גל ולדיסלב.",
+                      "address":  "טום לנטוס 26,כניסה A,קומה 1, נתניה, ישראל",
+                      "lat":  32.3069382,
+                      "lng":  34.869091,
+                      "phone":  "+972 54-317-6232",
+                      "rating":  4.7,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%94%D7%A9%D7%AA%D7%9C%D7%95%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%91%D7%A0%D7%AA%D7%A0%D7%99%D7%94-%D7%93%D7%99%D7%99%D7%A8%20%D7%92%D7%9C%20%D7%95%D7%9C%D7%93%D7%99%D7%A1%D7%9C%D7%91.\u0026query_place_id=ChIJ4S6xQfA_HRUR1NCcDCH-I7c"
+                  }
+              ],
+    "ראש העין":  [
+                     {
+                         "name":  "מכבי ראש העין",
+                         "address":  "דרך הציונות 17, ראש העין, ישראל",
+                         "lat":  32.1020373,
+                         "lng":  34.9611006,
+                         "phone":  "+972 3-938-6111",
+                         "rating":  4.1,
+                         "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%A8%D7%90%D7%A9%20%D7%94%D7%A2%D7%99%D7%9F\u0026query_place_id=ChIJB9Khh9AwHRURnaxmEtuHscI"
+                     }
+                 ],
+    "כפר סבא":  [
+                    {
+                        "name":  "מרכז רפואי המושבה - מוקד בדיקות מעבדה - הוד השרון",
+                        "address":  "סוקולוב 46, הוד השרון, ישראל",
+                        "lat":  32.1688295,
+                        "lng":  34.9014608,
+                        "phone":  "",
+                        "rating":  null,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A8%D7%A4%D7%95%D7%90%D7%99%20%D7%94%D7%9E%D7%95%D7%A9%D7%91%D7%94%20-%20%D7%9E%D7%95%D7%A7%D7%93%20%D7%91%D7%93%D7%99%D7%A7%D7%95%D7%AA%20%D7%9E%D7%A2%D7%91%D7%93%D7%94%20-%20%D7%94%D7%95%D7%93%20%D7%94%D7%A9%D7%A8%D7%95%D7%9F\u0026query_place_id=ChIJL1iKAME5HRURpoZ8Piw0wFQ"
+                    },
+                    {
+                        "name":  "בן גוריון - מכון רנטגן - כפר סבא",
+                        "address":  "בן גוריון 43, כפר סבא, ישראל",
+                        "lat":  32.1723673,
+                        "lng":  34.9088674,
+                        "phone":  "+972 9-794-0400",
+                        "rating":  null,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%91%D7%9F%20%D7%92%D7%95%D7%A8%D7%99%D7%95%D7%9F%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%9B%D7%A4%D7%A8%20%D7%A1%D7%91%D7%90\u0026query_place_id=ChIJI3oj7DE5HRUR8Lv5g0jLmSQ"
+                    },
+                    {
+                        "name":  "משוב שרותי רנטגן והדמיה בע\"מ",
+                        "address":  "דרך השרון 12, כפר סבא, ישראל",
+                        "lat":  32.1735556,
+                        "lng":  34.8922012,
+                        "phone":  "+972 9-744-0155",
+                        "rating":  2,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A9%D7%95%D7%91%20%D7%A9%D7%A8%D7%95%D7%AA%D7%99%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%94%D7%93%D7%9E%D7%99%D7%94%20%D7%91%D7%A2%22%D7%9E\u0026query_place_id=ChIJaYGeZ_M5HRURJU5Ajk4xdRA"
+                    }
+                ],
+    "אשקלון":  [
+                   {
+                       "name":  "מור - אשקלון",
+                       "address":  "מרכז רפואה יועצת כללית, שדרות דוד בן גוריון 23, קומה 2, אשקלון, ישראל",
+                       "lat":  31.6635932,
+                       "lng":  34.5656407,
+                       "phone":  "+972 3-940-5350",
+                       "rating":  5,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%95%D7%A8%20-%20%D7%90%D7%A9%D7%A7%D7%9C%D7%95%D7%9F\u0026query_place_id=ChIJXwkeycedAhURR75nr7_mufQ"
+                   },
+                   {
+                       "name":  "מכון EMG ד\"ר סולימאן אלקרינאוי - מכון רנטגן/הדמיה - אשקלון",
+                       "address":  "שדרות דוד בן גוריון 1, אשקלון, ישראל",
+                       "lat":  31.6605,
+                       "lng":  34.5896,
+                       "phone":  "",
+                       "rating":  null,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20EMG%20%D7%93%22%D7%A8%20%D7%A1%D7%95%D7%9C%D7%99%D7%9E%D7%90%D7%9F%20%D7%90%D7%9C%D7%A7%D7%A8%D7%99%D7%A0%D7%90%D7%95%D7%99%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%90%D7%A9%D7%A7%D7%9C%D7%95%D7%9F\u0026query_place_id=ChIJH7ezbeadAhUROe-CII63kVM"
+                   },
+                   {
+                       "name":  "בוגידנט מעבדות רפואיות",
+                       "address":  "הגדוד העברי 10, חדר 118, קומה א, אשקלון, ישראל",
+                       "lat":  31.6652036,
+                       "lng":  34.586098,
+                       "phone":  "+972 8-675-0743",
+                       "rating":  3.7,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%91%D7%95%D7%92%D7%99%D7%93%D7%A0%D7%98%20%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA%20%D7%A8%D7%A4%D7%95%D7%90%D7%99%D7%95%D7%AA\u0026query_place_id=ChIJEYagKG6cAhURmuYMWtm6tvs"
+                   }
+               ],
+    "חולון":  [
+                  {
+                      "name":  "מרכז בריאות האשה - אולטרה סאונד - חולון",
+                      "address":  "רפאל איתן 4, חולון, ישראל",
+                      "lat":  32.0074323,
+                      "lng":  34.7836751,
+                      "phone":  "+972 3-750-3300",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA%20%D7%94%D7%90%D7%A9%D7%94%20-%20%D7%90%D7%95%D7%9C%D7%98%D7%A8%D7%94%20%D7%A1%D7%90%D7%95%D7%A0%D7%93%20-%20%D7%97%D7%95%D7%9C%D7%95%D7%9F\u0026query_place_id=ChIJw8Qt5MK1AhUR3pfboKG9IYQ"
+                  },
+                  {
+                      "name":  "דיגיטל דנט",
+                      "address":  "סוקולוב 90, חולון, ישראל",
+                      "lat":  32.0224027,
+                      "lng":  34.779717,
+                      "phone":  "+972 3-505-0019",
+                      "rating":  4,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%20%D7%93%D7%A0%D7%98\u0026query_place_id=ChIJp_NsTa-0AhURDmJXSAQxT_8"
+                  },
+                  {
+                      "name":  "קליינברט מרפאה דנטלית בע\"מ",
+                      "address":  "סוקולוב 77, חולון, ישראל",
+                      "lat":  32.022645,
+                      "lng":  34.7786511,
+                      "phone":  "+972 3-501-8495",
+                      "rating":  5,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%9C%D7%99%D7%99%D7%A0%D7%91%D7%A8%D7%98%20%D7%9E%D7%A8%D7%A4%D7%90%D7%94%20%D7%93%D7%A0%D7%98%D7%9C%D7%99%D7%AA%20%D7%91%D7%A2%22%D7%9E\u0026query_place_id=ChIJt6oMH-61AhUR2qtRUpdypT4"
+                  }
+              ],
+    "באר שבע":  [
+                    {
+                        "name":  "בריאותא באר שבע",
+                        "address":  "מרכז מבנה, יצחק נפחא 25, באר שבע, ישראל",
+                        "lat":  31.2479757,
+                        "lng":  34.8119079,
+                        "phone":  "+972 8-958-5300",
+                        "rating":  4,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA%D7%90%20%D7%91%D7%90%D7%A8%20%D7%A9%D7%91%D7%A2\u0026query_place_id=ChIJ07LdRxFmAhURNwRunHl2zvk"
+                    },
+                    {
+                        "name":  "מכון פיזיקלי EMG - מכון רנטגן/הדמיה - באר שבע",
+                        "address":  "התקווה 10, באר שבע, ישראל",
+                        "lat":  31.2477,
+                        "lng":  34.7991,
+                        "phone":  "+972 55-988-5782",
+                        "rating":  null,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A4%D7%99%D7%96%D7%99%D7%A7%D7%9C%D7%99%20EMG%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%91%D7%90%D7%A8%20%D7%A9%D7%91%D7%A2\u0026query_place_id=ChIJOWwWdCpnAhURy70uKgmmR2I"
+                    },
+                    {
+                        "name":  "מרכז מומחים כללית בנגב - מכון רנטגן/הדמיה - באר שבע",
+                        "address":  "הנרייטה סולד 1, באר שבע, ישראל",
+                        "lat":  31.2473122,
+                        "lng":  34.8024567,
+                        "phone":  "+972 8-629-2788",
+                        "rating":  null,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%9B%D7%9C%D7%9C%D7%99%D7%AA%20%D7%91%D7%A0%D7%92%D7%91%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%91%D7%90%D7%A8%20%D7%A9%D7%91%D7%A2\u0026query_place_id=ChIJEQCliLNnAhURjgsoOAX4GKw"
+                    }
+                ],
+    "מודיעין":  [
+                    {
+                        "name":  "רניום ציוד למעבדות מחקר בע\"מ",
+                        "address":  "הסתת 20, מודיעין מכבים רעות, ישראל",
+                        "lat":  31.8861503,
+                        "lng":  34.9618339,
+                        "phone":  "+972 8-955-8888",
+                        "rating":  4.8,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A8%D7%A0%D7%99%D7%95%D7%9D%20%D7%A6%D7%99%D7%95%D7%93%20%D7%9C%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA%20%D7%9E%D7%97%D7%A7%D7%A8%20%D7%91%D7%A2%22%D7%9E\u0026query_place_id=ChIJzTStyirRAhURGQ4lAxINbHQ"
+                    }
+                ],
+    "נצרת":  [
+                 {
+                     "name":  "panorami maha",
+                     "address":  "אכסאל 9, נצרת, ישראל",
+                     "lat":  32.7001766,
+                     "lng":  35.2983578,
+                     "phone":  "+972 50-922-9119",
+                     "rating":  null,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=panorami%20maha\u0026query_place_id=ChIJV4a9MQBNHBURZy3y4TTA3Yk"
+                 },
+                 {
+                     "name":  "ממוגרפיה בי\"ח צרפתי - מכון רנטגן/הדמיה - נצרת",
+                     "address":  "יש לרשום בוויז בית חולים צרפתי, אל ואדי אל ג\u0027וואני, נצרת, ישראל",
+                     "lat":  32.7016182,
+                     "lng":  35.2941645,
+                     "phone":  "+972 4-650-9000",
+                     "rating":  null,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9E%D7%95%D7%92%D7%A8%D7%A4%D7%99%D7%94%20%D7%91%D7%99%22%D7%97%20%D7%A6%D7%A8%D7%A4%D7%AA%D7%99%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%A0%D7%A6%D7%A8%D7%AA\u0026query_place_id=ChIJCRAZdpBNHBURhYWDPNaWbL8"
+                 },
+                 {
+                     "name":  "מגדלי נצרת - מכון רנטגן",
+                     "address":  "ליד משרד הבריאות. ניתן להשתמש בתכנת waze ולרשום מגדלי נצרת, כביש עוקף 15, נצרת, ישראל",
+                     "lat":  32.6909887,
+                     "lng":  35.291744,
+                     "phone":  "+972 4-612-9500",
+                     "rating":  null,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%92%D7%93%D7%9C%D7%99%20%D7%A0%D7%A6%D7%A8%D7%AA%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F\u0026query_place_id=ChIJVyDqaQ5NHBURqxWwCd9sPzw"
+                 }
+             ],
+    "ירושלים":  [
+                    {
+                        "name":  "BIOHOUSE Labs",
+                        "address":  "קלמן יעקב מן, ירושלים, 9112101, ישראל",
+                        "lat":  31.7667438,
+                        "lng":  35.1471338,
+                        "phone":  "+972 79-300-2929",
+                        "rating":  5,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=BIOHOUSE%20Labs\u0026query_place_id=ChIJkXGOelbXAhUR-XhtuzEb-9s"
+                    },
+                    {
+                        "name":  "גבריאל - המרכז לפוריות הגבר",
+                        "address":  "בית החולים שערי צדק - קומה 5 (בתוך המרכז לבריאות האשה, שְׁמוּאֵל (הנס) בַּייט 12, ירושלים, 9644010, ישראל",
+                        "lat":  31.7730778,
+                        "lng":  35.1851696,
+                        "phone":  "+972 1-700-505-557",
+                        "rating":  null,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%92%D7%91%D7%A8%D7%99%D7%90%D7%9C%20-%20%D7%94%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9C%D7%A4%D7%95%D7%A8%D7%99%D7%95%D7%AA%20%D7%94%D7%92%D7%91%D7%A8\u0026query_place_id=ChIJbSmtGE7XAhURZliP_qjvIDM"
+                    },
+                    {
+                        "name":  "קופ\"ח מאוחדת - מרפאת בית וגן, ירושלים",
+                        "address":  "הפסגה 35, ירושלים, ישראל",
+                        "lat":  31.768589,
+                        "lng":  35.1825218,
+                        "phone":  "+972 2-644-2999",
+                        "rating":  4,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%95%D7%A4%22%D7%97%20%D7%9E%D7%90%D7%95%D7%97%D7%93%D7%AA%20-%20%D7%9E%D7%A8%D7%A4%D7%90%D7%AA%20%D7%91%D7%99%D7%AA%20%D7%95%D7%92%D7%9F%2C%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D\u0026query_place_id=ChIJq4C4Gb3XAhURSfFwAS5Tqj4"
+                    }
+                ],
+    "רמת גן":  [
+                   {
+                       "name":  "טכנאי שיניים | שיניים תותבות | תיקון שיניים תותבות | מעבדת שיניים | מרפאת יסקין",
+                       "address":  "דוד בן גוריון 38, רמת גן, 5257511, ישראל",
+                       "lat":  32.0915855,
+                       "lng":  34.8223874,
+                       "phone":  "+972 53-798-4899",
+                       "rating":  5,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%98%D7%9B%D7%A0%D7%90%D7%99%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%7C%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%AA%D7%95%D7%AA%D7%91%D7%95%D7%AA%20%7C%20%D7%AA%D7%99%D7%A7%D7%95%D7%9F%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%AA%D7%95%D7%AA%D7%91%D7%95%D7%AA%20%7C%20%D7%9E%D7%A2%D7%91%D7%93%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%7C%20%D7%9E%D7%A8%D7%A4%D7%90%D7%AA%20%D7%99%D7%A1%D7%A7%D7%99%D7%9F\u0026query_place_id=ChIJ42WFHPtLHRURYuzOQyKjryc"
+                   },
+                   {
+                       "name":  "מדיקס את הום בדיקות רנטגן ואולטרסאונד בבית הלקוח",
+                       "address":  "בצלאל 10, רמת גן, ישראל",
+                       "lat":  32.0867664,
+                       "lng":  34.8013398,
+                       "phone":  "+972 51-561-5771",
+                       "rating":  4,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%93%D7%99%D7%A7%D7%A1%20%D7%90%D7%AA%20%D7%94%D7%95%D7%9D%20%D7%91%D7%93%D7%99%D7%A7%D7%95%D7%AA%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%90%D7%95%D7%9C%D7%98%D7%A8%D7%A1%D7%90%D7%95%D7%A0%D7%93%20%D7%91%D7%91%D7%99%D7%AA%20%D7%94%D7%9C%D7%A7%D7%95%D7%97\u0026query_place_id=ChIJ1yl3iGtKHRURXm5YE6uZJY0"
+                   },
+                   {
+                       "name":  "ד\"ר יסקין",
+                       "address":  "ז\u0027בוטינסקי 138, David Ben Gurion Street 44, כניסה לחניה, רמת גן, 5260208, ישראל",
+                       "lat":  32.0906097,
+                       "lng":  34.8221008,
+                       "phone":  "+972 3-612-0412",
+                       "rating":  4.5,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%93%22%D7%A8%20%D7%99%D7%A1%D7%A7%D7%99%D7%9F\u0026query_place_id=ChIJVV2PtC1KHRURKWgfRtIP6hk"
+                   }
+               ],
+    "תל אביב-יפו":  [
+                        {
+                            "name":  "Pronto Diagnostics Ltd.",
+                            "address":  "ראול ולנברג 33, תל אביב-יפו, ישראל",
+                            "lat":  32.1147195,
+                            "lng":  34.8434541,
+                            "phone":  "+972 73-212-6155",
+                            "rating":  3,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=Pronto%20Diagnostics%20Ltd.\u0026query_place_id=ChIJuTQAqMFJHRUR0LkxGgZ8Kg8"
+                        },
+                        {
+                            "name":  "ZER LABORATORIES LTD. זר מעבדות בע\"מ",
+                            "address":  "ראול ולנברג 6, קומה 3, תל אביב-יפו, ישראל",
+                            "lat":  32.1076056,
+                            "lng":  34.8350876,
+                            "phone":  "+972 3-524-7261",
+                            "rating":  2.3,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=ZER%20LABORATORIES%20LTD.%20%D7%96%D7%A8%20%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA%20%D7%91%D7%A2%22%D7%9E\u0026query_place_id=ChIJsbbVlpRJHRURp05Uk0lvOqI"
+                        },
+                        {
+                            "name":  "Prime Pathology LTD",
+                            "address":  "הנחושת 2, תל אביב-יפו, ישראל",
+                            "lat":  32.1085091,
+                            "lng":  34.8402647,
+                            "phone":  "+972 3-642-5949",
+                            "rating":  5,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=Prime%20Pathology%20LTD\u0026query_place_id=ChIJl0bNSutJHRURGCnOuTyja8k"
+                        }
+                    ],
+    "רמלה":  [
+                 {
+                     "name":  "Marcus National Blood Services Center",
+                     "address":  "שדרות הרצל 135, רמלה, ישראל",
+                     "lat":  31.9233551,
+                     "lng":  34.8813019,
+                     "phone":  "",
+                     "rating":  5,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=Marcus%20National%20Blood%20Services%20Center\u0026query_place_id=ChIJLzK-_kHLAhURK7EXddreRHs"
+                 },
+                 {
+                     "name":  "לב רמלה - מכון רנטגן",
+                     "address":  "פינת ביאליק.\"מרכז גבסו, שדרות הרצל 88, רמלה, ישראל",
+                     "lat":  31.9277256,
+                     "lng":  34.8722709,
+                     "phone":  "+972 8-913-7315",
+                     "rating":  3,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9C%D7%91%20%D7%A8%D7%9E%D7%9C%D7%94%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F\u0026query_place_id=ChIJS3llXgPKAhURtadBzEawoPw"
+                 },
+                 {
+                     "name":  "ד\"ר קאקונדה ג\u0027ורג\u0027 דנטל סנטר בע\"מ",
+                     "address":  "מאיר בר אילן 26, רמלה, 7241503, ישראל",
+                     "lat":  31.9299088,
+                     "lng":  34.8657082,
+                     "phone":  "+972 8-924-1470",
+                     "rating":  4.7,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%93%22%D7%A8%20%D7%A7%D7%90%D7%A7%D7%95%D7%A0%D7%93%D7%94%20%D7%92\u0027%D7%95%D7%A8%D7%92\u0027%20%D7%93%D7%A0%D7%98%D7%9C%20%D7%A1%D7%A0%D7%98%D7%A8%20%D7%91%D7%A2%22%D7%9E\u0026query_place_id=ChIJqeg-0wbKAhURkKYDP5CcFZc"
+                 }
+             ],
+    "אילת":  [
+                 {
+                     "name":  "דנטל דיגיטל",
+                     "address":  "המלאכה 7, אילת, ישראל",
+                     "lat":  29.5634307,
+                     "lng":  34.9575958,
+                     "phone":  "+972 8-933-8833",
+                     "rating":  4.4,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%93%D7%A0%D7%98%D7%9C%20%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C\u0026query_place_id=ChIJMxssRgJuABUR4j3RuF-6nBE"
+                 },
+                 {
+                     "name":  "יוספטל - מכון רנטגן/הדמיה - אילת",
+                     "address":  "דרך יותם קומה 1, אילת, ישראל",
+                     "lat":  29.5554803,
+                     "lng":  34.9453713,
+                     "phone":  "+972 8-635-8031",
+                     "rating":  null,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%99%D7%95%D7%A1%D7%A4%D7%98%D7%9C%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%90%D7%99%D7%9C%D7%AA\u0026query_place_id=ChIJRfp9OZ1zABURzPaauRXVuRw"
+                 },
+                 {
+                     "name":  "מעבדת שיניים דיגיטלית באילת - ProSmile Studio",
+                     "address":  "Haanafa 1, אילת, ישראל",
+                     "lat":  29.5547748,
+                     "lng":  34.9457066,
+                     "phone":  "+972 54-786-8805",
+                     "rating":  5,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A2%D7%91%D7%93%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%D7%AA%20%D7%91%D7%90%D7%99%D7%9C%D7%AA%20-%20ProSmile%20Studio\u0026query_place_id=ChIJe8EgNtodsG0R3LyuqtGevg4"
+                 }
+             ],
+    "ערד":  [
+                {
+                    "name":  "מכון רנטגן - ערד",
+                    "address":  "חן 24, ערד, ישראל",
+                    "lat":  31.2584047,
+                    "lng":  35.2121668,
+                    "phone":  "+972 8-955-0222",
+                    "rating":  null,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%A2%D7%A8%D7%93\u0026query_place_id=ChIJ7fj1WxD_AhURU1ZEWUejVGY"
+                }
+            ],
+    "אשדוד":  [
+                  {
+                      "name":  "אור השן",
+                      "address":  "צה\"ל 1, אשדוד, ישראל",
+                      "lat":  31.7928387,
+                      "lng":  34.6390541,
+                      "phone":  "",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%90%D7%95%D7%A8%20%D7%94%D7%A9%D7%9F\u0026query_place_id=ChIJuUpc0R-jAhUR68S_vcD-3ZQ"
+                  },
+                  {
+                      "name":  "מרכז מקצועי אשדוד - מכון רנטגן/הדמיה",
+                      "address":  "צה\"ל 1, אשדוד, ישראל",
+                      "lat":  31.7932857,
+                      "lng":  34.6399485,
+                      "phone":  "+972 8-854-9666",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%20%D7%90%D7%A9%D7%93%D7%95%D7%93%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94\u0026query_place_id=ChIJ6VvALMOjAhURGcXoYddoa_8"
+                  },
+                  {
+                      "name":  "צ.צ הנדסה תיקון מכשור וציוד רפואי",
+                      "address":  "יובב המלך 5, אשדוד, 7749513, ישראל",
+                      "lat":  31.7735823,
+                      "lng":  34.639634,
+                      "phone":  "+972 54-765-7654",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A6.%D7%A6%20%D7%94%D7%A0%D7%93%D7%A1%D7%94%20%D7%AA%D7%99%D7%A7%D7%95%D7%9F%20%D7%9E%D7%9B%D7%A9%D7%95%D7%A8%20%D7%95%D7%A6%D7%99%D7%95%D7%93%20%D7%A8%D7%A4%D7%95%D7%90%D7%99\u0026query_place_id=ChIJCUPlRWCiAhUR32IwsVnScgs"
+                  }
+              ],
+    "קריית ביאליק":  [
+                         {
+                             "name":  "מעבדות זר",
+                             "address":  "דרך עכו 140, קריית ביאליק, ישראל",
+                             "lat":  32.8364905,
+                             "lng":  35.0853125,
+                             "phone":  "",
+                             "rating":  null,
+                             "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA%20%D7%96%D7%A8\u0026query_place_id=ChIJQW9BQeK2HRURm6EXJ4ViZWc"
+                         },
+                         {
+                             "name":  "מרכז מומחים זבולון - רנטגן והדמיה - קרית ביאליק",
+                             "address":  "המייסדים 7 בנין מס\u0027 1, קריית ביאליק, ישראל",
+                             "lat":  32.8443017,
+                             "lng":  35.0935174,
+                             "phone":  "+972 4-878-7877",
+                             "rating":  5,
+                             "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%96%D7%91%D7%95%D7%9C%D7%95%D7%9F%20-%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%A7%D7%A8%D7%99%D7%AA%20%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7\u0026query_place_id=ChIJM5z_DUe3HRURFL5YXxzPLFk"
+                         }
+                     ],
+    "רחובות":  [
+                   {
+                       "name":  "רמז - מכון רנטגן - רחובות",
+                       "address":  "דוד רמז 71, פינת רוז\u0027נסקי 8, רחובות, ישראל",
+                       "lat":  31.8945689,
+                       "lng":  34.8039574,
+                       "phone":  "+972 8-944-5123",
+                       "rating":  5,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A8%D7%9E%D7%96%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA\u0026query_place_id=ChIJfz_mGte3AhURge3aG6SwOlE"
+                   },
+                   {
+                       "name":  "Meuhedet laboratory",
+                       "address":  "בנימין 12, רחובות, ישראל",
+                       "lat":  31.894484,
+                       "lng":  34.812834,
+                       "phone":  "",
+                       "rating":  5,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=Meuhedet%20laboratory\u0026query_place_id=ChIJX_WKgga3AhURNClSGKaSs5A"
+                   },
+                   {
+                       "name":  "מכון שפרה",
+                       "address":  "עזרא 4, רחובות, ישראל",
+                       "lat":  31.8911283,
+                       "lng":  34.8129757,
+                       "phone":  "+972 8-931-5756",
+                       "rating":  3.4,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A9%D7%A4%D7%A8%D7%94\u0026query_place_id=ChIJW1ifrAi3AhUR9gqJmALYwiQ"
+                   }
+               ],
+    "עכו":  [
+                {
+                    "name":  "מעבדות זר",
+                    "address":  "דרך הארבעה 27, עכו, ישראל",
+                    "lat":  32.9258941,
+                    "lng":  35.0785612,
+                    "phone":  "",
+                    "rating":  null,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA%20%D7%96%D7%A8\u0026query_place_id=ChIJ69GJFFTIHRURyJbrD2nIMgw"
+                },
+                {
+                    "name":  "קופ\"ח מכבי",
+                    "address":  "דרך הארבעה 41, עכו, ישראל",
+                    "lat":  32.9281406,
+                    "lng":  35.0793702,
+                    "phone":  "+972 4-985-1111",
+                    "rating":  4,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%95%D7%A4%22%D7%97%20%D7%9E%D7%9B%D7%91%D7%99\u0026query_place_id=ChIJq5psTVbIHRUR71d32-coerI"
+                },
+                {
+                    "name":  "מרכז מומחים עכו - רנטגן הדמיה",
+                    "address":  "העצמאות 68, עכו, ישראל",
+                    "lat":  32.9274479,
+                    "lng":  35.0788,
+                    "phone":  "+972 4-995-7013",
+                    "rating":  null,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%A2%D7%9B%D7%95%20-%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%94%D7%93%D7%9E%D7%99%D7%94\u0026query_place_id=ChIJtVxRgwrJHRUR7BfFr4mdloE"
+                }
+            ],
+    "כרמיאל":  [
+                   {
+                       "name":  "Art Rock - מרפאה ומעבדת שיניים",
+                       "address":  "ארבל 13 חנות מספר 1, כרמיאל, ישראל",
+                       "lat":  32.9115253,
+                       "lng":  35.2999058,
+                       "phone":  "+972 4-998-5247",
+                       "rating":  5,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=Art%20Rock%20-%20%D7%9E%D7%A8%D7%A4%D7%90%D7%94%20%D7%95%D7%9E%D7%A2%D7%91%D7%93%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D\u0026query_place_id=ChIJydnneuMzHBURNT0Mluvl_IQ"
+                   },
+                   {
+                       "name":  "מור - כרמיאל",
+                       "address":  "מורד הגיא 100, כרמיאל, ישראל",
+                       "lat":  32.9074632,
+                       "lng":  35.2938125,
+                       "phone":  "+972 3-940-5350",
+                       "rating":  3.8,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%95%D7%A8%20-%20%D7%9B%D7%A8%D7%9E%D7%99%D7%90%D7%9C\u0026query_place_id=ChIJJSyDYI0zHBURrjxXHXMl7vs"
+                   },
+                   {
+                       "name":  "מרכז מומחים כרמיאל - רנטגן והדמיה",
+                       "address":  "קניון לב, מורד הגיא 100, קומה 1, כרמיאל, ישראל",
+                       "lat":  32.908102,
+                       "lng":  35.29374,
+                       "phone":  "+972 4-990-7011",
+                       "rating":  null,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%9B%D7%A8%D7%9E%D7%99%D7%90%D7%9C%20-%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%94%D7%93%D7%9E%D7%99%D7%94\u0026query_place_id=ChIJu4Bkc-8zHBURdjsSrM4IYUg"
+                   }
+               ],
+    "דימונה":  [
+                   {
+                       "name":  "רנטגן - מרכז לרפואה יועצת - דימונה",
+                       "address":  "במרכז רפואי-ע\"ש מיראז\u0027 ליד תחנת מד\"א, שדרות הרצל 233, דימונה, ישראל",
+                       "lat":  31.0676106,
+                       "lng":  35.0373194,
+                       "phone":  "+972 8-682-1111",
+                       "rating":  null,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9C%D7%A8%D7%A4%D7%95%D7%90%D7%94%20%D7%99%D7%95%D7%A2%D7%A6%D7%AA%20-%20%D7%93%D7%99%D7%9E%D7%95%D7%A0%D7%94\u0026query_place_id=ChIJw4zupJZHAhURx0p2eoUPJ0U"
+                   }
+               ],
+    "הרצליה":  [
+                   {
+                       "name":  "אמריקן מדיקל לבורטוריס",
+                       "address":  "חבצלת השרון 37, קומה 2, הרצליה, ישראל",
+                       "lat":  32.1789307,
+                       "lng":  34.805066,
+                       "phone":  "+972 9-956-8634",
+                       "rating":  4.4,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%90%D7%9E%D7%A8%D7%99%D7%A7%D7%9F%20%D7%9E%D7%93%D7%99%D7%A7%D7%9C%20%D7%9C%D7%91%D7%95%D7%A8%D7%98%D7%95%D7%A8%D7%99%D7%A1\u0026query_place_id=ChIJq6qqqptIHRURaQ-pfXlpSBY"
+                   },
+                   {
+                       "name":  "א.מ.ג. אמריקן מדיקל ג\u0027נטיקס בע\"מ",
+                       "address":  "חבצלת השרון 37, הרצליה, ישראל",
+                       "lat":  32.1789864,
+                       "lng":  34.8048763,
+                       "phone":  "+972 76-811-6189",
+                       "rating":  null,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%90.%D7%9E.%D7%92.%20%D7%90%D7%9E%D7%A8%D7%99%D7%A7%D7%9F%20%D7%9E%D7%93%D7%99%D7%A7%D7%9C%20%D7%92\u0027%D7%A0%D7%98%D7%99%D7%A7%D7%A1%20%D7%91%D7%A2%22%D7%9E\u0026query_place_id=ChIJ3weiflNJHRUR2OXcogtkNPA"
+                   },
+                   {
+                       "name":  "מכבי שירותי בריאות",
+                       "address":  "הנדיב 3, הרצליה, ישראל",
+                       "lat":  32.1676061,
+                       "lng":  34.8403513,
+                       "phone":  "+972 9-959-4111",
+                       "rating":  3.3,
+                       "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA\u0026query_place_id=ChIJ76C3VAtIHRUR-J-msO__blc"
+                   }
+               ],
+    "קריית גת":  [
+                     {
+                         "name":  "Махон MAR",
+                         "address":  "רחבת תשרי, קרית גת, ישראל",
+                         "lat":  31.6030452,
+                         "lng":  34.7754445,
+                         "phone":  "+972 76-809-9800",
+                         "rating":  1,
+                         "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D0%9C%D0%B0%D1%85%D0%BE%D0%BD%20MAR\u0026query_place_id=ChIJEZPT9NeTAhURKIeHSWpEbHw"
+                     },
+                     {
+                         "name":  "מרכז לרפואה יועצת - מכון רנטגן - קרית גת",
+                         "address":  "שדרות העצמאות 37, קרית גת, ישראל",
+                         "lat":  31.610582,
+                         "lng":  34.773227,
+                         "phone":  "+972 8-933-5222",
+                         "rating":  null,
+                         "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9C%D7%A8%D7%A4%D7%95%D7%90%D7%94%20%D7%99%D7%95%D7%A2%D7%A6%D7%AA%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%A7%D7%A8%D7%99%D7%AA%20%D7%92%D7%AA\u0026query_place_id=ChIJwfLDUQmRAhURbvE43t6uQXA"
+                     }
+                 ],
+    "חיפה":  [
+                 {
+                     "name":  "קניון מרכז חורב",
+                     "address":  "חורב 15, חיפה, ישראל",
+                     "lat":  32.7845699,
+                     "lng":  34.9871187,
+                     "phone":  "+972 4-824-6164",
+                     "rating":  4,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%A0%D7%99%D7%95%D7%9F%20%D7%9E%D7%A8%D7%9B%D7%96%20%D7%97%D7%95%D7%A8%D7%91\u0026query_place_id=ChIJ_-oLDhm7HRURcTeZEbwL3J8"
+                 },
+                 {
+                     "name":  "The Combustion and Diagnostics Laboratory",
+                     "address":  "הטכניון - מכון טכנולוגי לישראל, Lady Davis 384, חיפה, 32000, ישראל",
+                     "lat":  32.7745832,
+                     "lng":  35.0223991,
+                     "phone":  "",
+                     "rating":  5,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=The%20Combustion%20and%20Diagnostics%20Laboratory\u0026query_place_id=ChIJjbP0I3e7HRUR88Az2gn5HV0"
+                 },
+                 {
+                     "name":  "המעבדה לחידושי טכנולוגיה",
+                     "address":  "חיפה, ישראל",
+                     "lat":  32.7624168,
+                     "lng":  35.0186854,
+                     "phone":  "",
+                     "rating":  null,
+                     "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%94%D7%9E%D7%A2%D7%91%D7%93%D7%94%20%D7%9C%D7%97%D7%99%D7%93%D7%95%D7%A9%D7%99%20%D7%98%D7%9B%D7%A0%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%94\u0026query_place_id=ChIJy5KBR7i6HRURgnVgcnSRHa4"
+                 }
+             ],
+    "נהריה":  [
+                  {
+                      "name":  "מרכז מומחים נהריה - רנטגן והדמיה",
+                      "address":  "במרפאה יש מעלון (לנכים), ללא גישה לעגלות תינוקות, הרצל 66, נהריה, ישראל",
+                      "lat":  33.0052363,
+                      "lng":  35.0957871,
+                      "phone":  "+972 4-995-8222",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%A0%D7%94%D7%A8%D7%99%D7%94%20-%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%94%D7%93%D7%9E%D7%99%D7%94\u0026query_place_id=ChIJhZ8fWnjPHRURoaJEc-H9vMM"
+                  },
+                  {
+                      "name":  "דנטאל נהריה-שינויים בשעות הפעילות",
+                      "address":  "מול הכניסה, סוקולוב 1, נהריה, לטיילת, ישראל",
+                      "lat":  33.0069032,
+                      "lng":  35.0897361,
+                      "phone":  "+972 4-992-4894",
+                      "rating":  4.1,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%93%D7%A0%D7%98%D7%90%D7%9C%20%D7%A0%D7%94%D7%A8%D7%99%D7%94-%D7%A9%D7%99%D7%A0%D7%95%D7%99%D7%99%D7%9D%20%D7%91%D7%A9%D7%A2%D7%95%D7%AA%20%D7%94%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA\u0026query_place_id=ChIJEQ3YaVbOHRURgIoaiIRcAsU"
+                  },
+                  {
+                      "name":  "געתון - נהריה",
+                      "address":  "שדרות הגעתון 38, נהריה, ישראל",
+                      "lat":  33.0071348,
+                      "lng":  35.0926898,
+                      "phone":  "+972 4-995-9090",
+                      "rating":  3.4,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%92%D7%A2%D7%AA%D7%95%D7%9F%20-%20%D7%A0%D7%94%D7%A8%D7%99%D7%94\u0026query_place_id=ChIJOW-W2lnOHRUR-O6KLwoiuJw"
+                  }
+              ],
+    "בני ברק":  [
+                    {
+                        "name":  "\"דור ישרים בדיקות גנטיות - סניף בני ברק\"",
+                        "address":  "רבי עקיבא 78, בני ברק, ישראל",
+                        "lat":  32.0864248,
+                        "lng":  34.8297056,
+                        "phone":  "+972 3-961-9983",
+                        "rating":  3.7,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%22%D7%93%D7%95%D7%A8%20%D7%99%D7%A9%D7%A8%D7%99%D7%9D%20%D7%91%D7%93%D7%99%D7%A7%D7%95%D7%AA%20%D7%92%D7%A0%D7%98%D7%99%D7%95%D7%AA%20-%20%D7%A1%D7%A0%D7%99%D7%A3%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7%22\u0026query_place_id=ChIJoZS4UCVKHRURFJUYMF-bQvE"
+                    },
+                    {
+                        "name":  "מרכז רפואי מכבי סניף בני ברק",
+                        "address":  "רבי עקיבא 86, בני ברק, ישראל",
+                        "lat":  32.0860821,
+                        "lng":  34.8303852,
+                        "phone":  "+972 3-577-1313",
+                        "rating":  3.6,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A8%D7%A4%D7%95%D7%90%D7%99%20%D7%9E%D7%9B%D7%91%D7%99%20%D7%A1%D7%A0%D7%99%D7%A3%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7\u0026query_place_id=ChIJR3K1OiVKHRURATEkQXUZd5Y"
+                    }
+                ],
+    "עפולה":  [
+                  {
+                      "name":  "מכון רנטגן - מרכז רפואי העמק",
+                      "address":  "אישפוז וחדרי ניתוח, שדרות יצחק רבין 21, קומה 2, בניין, עפולה, ישראל",
+                      "lat":  32.620459,
+                      "lng":  35.311675,
+                      "phone":  "+972 4-649-4374",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A8%D7%A4%D7%95%D7%90%D7%99%20%D7%94%D7%A2%D7%9E%D7%A7\u0026query_place_id=ChIJFxvYur1RHBUR4LIHq-BOKvY"
+                  },
+                  {
+                      "name":  "מכון M.R.I - מכון רנטגן/הדמיה - עפולה",
+                      "address":  "שדרות יצחק רבין, עפולה, ישראל",
+                      "lat":  32.615846,
+                      "lng":  35.300826,
+                      "phone":  "+972 4-649-5577",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20M.R.I%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%A2%D7%A4%D7%95%D7%9C%D7%94\u0026query_place_id=ChIJfajki-lTHBURsde6VPvm9uY"
+                  },
+                  {
+                      "name":  "פנוחכם",
+                      "address":  "שדרות ארלוזורוב 17, עפולה, ישראל",
+                      "lat":  32.6081782,
+                      "lng":  35.288251,
+                      "phone":  "+972 4-652-8063",
+                      "rating":  3.8,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A4%D7%A0%D7%95%D7%97%D7%9B%D7%9D\u0026query_place_id=ChIJa_iOp08-HBUR98jpEweGlKc"
+                  }
+              ],
+    "ראשון לציון":  [
+                        {
+                            "name":  "פינסקר - מכון רנטגן - ראשון לציון",
+                            "address":  "יש לציין ב- WAZE, יהודה לייב פינסקר 31, ראשון לציון, ישראל",
+                            "lat":  31.9683829,
+                            "lng":  34.8069654,
+                            "phone":  "+972 3-968-1888",
+                            "rating":  3,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A4%D7%99%D7%A0%D7%A1%D7%A7%D7%A8%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%A8%D7%90%D7%A9%D7%95%D7%9F%20%D7%9C%D7%A6%D7%99%D7%95%D7%9F\u0026query_place_id=ChIJdz7fYAG1AhURpUrGzrNbVpw"
+                        },
+                        {
+                            "name":  "מעבדת תיקונים",
+                            "address":  "דוד סניור, ראשון לציון, ישראל",
+                            "lat":  31.9657738,
+                            "lng":  34.8032472,
+                            "phone":  "",
+                            "rating":  null,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A2%D7%91%D7%93%D7%AA%20%D7%AA%D7%99%D7%A7%D7%95%D7%A0%D7%99%D7%9D\u0026query_place_id=ChIJD6cgFUe0AhURzL60eoTmNhI"
+                        },
+                        {
+                            "name":  "מכבי",
+                            "address":  "בית הפינה, רוטשילד 15, ראשון לציון, ישראל",
+                            "lat":  31.9639332,
+                            "lng":  34.8054252,
+                            "phone":  "+972 3-954-1111",
+                            "rating":  3.5,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99\u0026query_place_id=ChIJQ8Ehj0e0AhURLlQnq8EY_8M"
+                        }
+                    ],
+    "שדרות":  [
+                  {
+                      "name":  "מכון רנטגן - שדרות",
+                      "address":  "הדגל 4, שדרות, ישראל",
+                      "lat":  31.5238132,
+                      "lng":  34.5964126,
+                      "phone":  "+972 8-662-1222",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%A9%D7%93%D7%A8%D7%95%D7%AA\u0026query_place_id=ChIJRQjz2WyBAhURyiQpN5ro3rM"
+                  }
+              ],
+    "רעננה":  [
+                  {
+                      "name":  "מכון רנטגן - בי\u0027\u0027ח לוינשטיין",
+                      "address":  "אחוזה 278, רעננה, ישראל",
+                      "lat":  32.1848643,
+                      "lng":  34.8556677,
+                      "phone":  "",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%91%D7%99\u0027\u0027%D7%97%20%D7%9C%D7%95%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F\u0026query_place_id=ChIJKZwXMZRHHRURm4yvnya-bNg"
+                  },
+                  {
+                      "name":  "מכבי שירותי בריאות",
+                      "address":  "אחוזה 124, רעננה, ישראל",
+                      "lat":  32.1808429,
+                      "lng":  34.8739347,
+                      "phone":  "+972 9-747-0777",
+                      "rating":  3.4,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA\u0026query_place_id=ChIJgfCkphI4HRURO_MoqKF5nKY"
+                  },
+                  {
+                      "name":  "מעבדה מכבי לב הפארק",
+                      "address":  "שדרות בגין 14, רעננה, ישראל",
+                      "lat":  32.1940221,
+                      "lng":  34.850234,
+                      "phone":  "",
+                      "rating":  4.5,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A2%D7%91%D7%93%D7%94%20%D7%9E%D7%9B%D7%91%D7%99%20%D7%9C%D7%91%20%D7%94%D7%A4%D7%90%D7%A8%D7%A7\u0026query_place_id=ChIJe7VyIutHHRURGQC4GGzu4dw"
+                  }
+              ],
+    "פתח תקווה":  [
+                      {
+                          "name":  "Human test - שירותי מעבדה רפואית פרטית, בדיקות דם בבית באופן פרטי, פתח תקווה",
+                          "address":  "תרזה קוגלמן 4, פתח תקווה, 4972222, ישראל",
+                          "lat":  32.0930358,
+                          "lng":  34.873145,
+                          "phone":  "+972 1-700-700-907",
+                          "rating":  5,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=Human%20test%20-%20%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%9E%D7%A2%D7%91%D7%93%D7%94%20%D7%A8%D7%A4%D7%95%D7%90%D7%99%D7%AA%20%D7%A4%D7%A8%D7%98%D7%99%D7%AA%2C%20%D7%91%D7%93%D7%99%D7%A7%D7%95%D7%AA%20%D7%93%D7%9D%20%D7%91%D7%91%D7%99%D7%AA%20%D7%91%D7%90%D7%95%D7%A4%D7%9F%20%D7%A4%D7%A8%D7%98%D7%99%2C%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%95%D7%94\u0026query_place_id=ChIJVzA0pxo2HRURR4zteHegAzA"
+                      },
+                      {
+                          "name":  "RMC Innovation Lab",
+                          "address":  "רחוב זאב ז\u0027בוטינסקי 39, פתח תקווה, 4941492, ישראל",
+                          "lat":  32.091128,
+                          "lng":  34.8685356,
+                          "phone":  "+972 3-937-7894",
+                          "rating":  null,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=RMC%20Innovation%20Lab\u0026query_place_id=ChIJeXJiUH03HRURDZOm8XVLHdI"
+                      },
+                      {
+                          "name":  "רוטשילד - מכון רנטגן - פתח תקוה",
+                          "address":  "הכניסה לנכים, רוטשילד 119, בלפור 7, פתח תקווה, ישראל",
+                          "lat":  32.0819416,
+                          "lng":  34.8845962,
+                          "phone":  "+972 3-939-5340",
+                          "rating":  2.3,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20-%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%94\u0026query_place_id=ChIJbZcEPbw3HRURWZfnCtx3Cno"
+                      }
+                  ],
+    "גבעתיים":  [
+                    {
+                        "name":  "מכבי שירותי בריאות קומה 5 עזריאלי גבעתיים",
+                        "address":  "דרך יצחק רבין 53, גבעתיים, ישראל",
+                        "lat":  32.0665945,
+                        "lng":  34.8101499,
+                        "phone":  "",
+                        "rating":  2.7,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA%20%D7%A7%D7%95%D7%9E%D7%94%205%20%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99%20%D7%92%D7%91%D7%A2%D7%AA%D7%99%D7%99%D7%9D\u0026query_place_id=ChIJvzeh1qhLHRURVU2G9_wZ4MU"
+                    },
+                    {
+                        "name":  "מכבי גבעתיים עליית הנוער",
+                        "address":  "עליית הנוער 25, גבעתיים, ישראל",
+                        "lat":  32.0749643,
+                        "lng":  34.8017495,
+                        "phone":  "+972 3-572-6262",
+                        "rating":  3.8,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%92%D7%91%D7%A2%D7%AA%D7%99%D7%99%D7%9D%20%D7%A2%D7%9C%D7%99%D7%99%D7%AA%20%D7%94%D7%A0%D7%95%D7%A2%D7%A8\u0026query_place_id=ChIJ65BhPmdLHRURUGlIkghr78g"
+                    },
+                    {
+                        "name":  "קופת חולים מכבי",
+                        "address":  "אורה 4, רמת גן, ישראל",
+                        "lat":  32.0801724,
+                        "lng":  34.8154191,
+                        "phone":  "+972 3-675-0333",
+                        "rating":  3.6,
+                        "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%95%D7%A4%D7%AA%20%D7%97%D7%95%D7%9C%D7%99%D7%9D%20%D7%9E%D7%9B%D7%91%D7%99\u0026query_place_id=ChIJnaLAebVLHRURdxdu61f-8Ek"
+                    }
+                ],
+    "קריית שמונה":  [
+                        {
+                            "name":  "קרית שמונה מרכז מכון הרנטגן",
+                            "address":  "חיים ארלוזורוב 1, קרית שמונה, ישראל",
+                            "lat":  33.210198,
+                            "lng":  35.5686253,
+                            "phone":  "+972 4-695-8848",
+                            "rating":  5,
+                            "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A7%D7%A8%D7%99%D7%AA%20%D7%A9%D7%9E%D7%95%D7%A0%D7%94%20%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%94%D7%A8%D7%A0%D7%98%D7%92%D7%9F\u0026query_place_id=ChIJi_EGu2m9HhURQSat3j_3MTk"
+                        }
+                    ],
+    "מעלה אדומים":  [
+
+                    ],
+    "לוד":  [
+                {
+                    "name":  "מכבי שירותי בריאות, סניף לוד",
+                    "address":  "חיים משה שפירא 31, לוד, ישראל",
+                    "lat":  31.9478329,
+                    "lng":  34.9011619,
+                    "phone":  "+972 8-927-4111",
+                    "rating":  4.6,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA%2C%20%D7%A1%D7%A0%D7%99%D7%A3%20%D7%9C%D7%95%D7%93\u0026query_place_id=ChIJU22Q4VPKAhURmNJcLQdfy5c"
+                },
+                {
+                    "name":  "מכון מ.א.ר לוד - מכון רנטגן/הדמיה - לוד",
+                    "address":  "לוד, ישראל",
+                    "lat":  31.9512045,
+                    "lng":  34.8882211,
+                    "phone":  "",
+                    "rating":  null,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%95%D7%9F%20%D7%9E.%D7%90.%D7%A8%20%D7%9C%D7%95%D7%93%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%9C%D7%95%D7%93\u0026query_place_id=ChIJfU6XW37LAhUR_qvmRWsIl9c"
+                }
+            ],
+    "חדרה":  [
+
+             ],
+    "בת ים":  [
+                  {
+                      "name":  "מכבי מעבדה",
+                      "address":  "אלי כהן 1, בת ים, ישראל",
+                      "lat":  32.0094838,
+                      "lng":  34.7573093,
+                      "phone":  "",
+                      "rating":  5,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99%20%D7%9E%D7%A2%D7%91%D7%93%D7%94\u0026query_place_id=ChIJ53j9OQCzAhURWfKmybYm3og"
+                  },
+                  {
+                      "name":  "מרכז מומחים בתימון - רנטגן ודימות - בת ים",
+                      "address":  "הרב ניסנבאום 33, בת ים, ישראל",
+                      "lat":  32.0124046,
+                      "lng":  34.7520389,
+                      "phone":  "+972 3-555-6555",
+                      "rating":  1.5,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%91%D7%AA%D7%99%D7%9E%D7%95%D7%9F%20-%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%93%D7%99%D7%9E%D7%95%D7%AA%20-%20%D7%91%D7%AA%20%D7%99%D7%9D\u0026query_place_id=ChIJs7Mo8D-zAhURy9wODONWooQ"
+                  },
+                  {
+                      "name":  "מכבי",
+                      "address":  "בלפור 151, בת ים, ישראל",
+                      "lat":  32.0127533,
+                      "lng":  34.7423585,
+                      "phone":  "+972 3-552-5559",
+                      "rating":  1.8,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%9B%D7%91%D7%99\u0026query_place_id=ChIJozatwg-zAhURnSv-cxUlswo"
+                  }
+              ],
+    "הוד השרון":  [
+                      {
+                          "name":  "מרכז רפואי המושבה - מוקד בדיקות מעבדה - הוד השרון",
+                          "address":  "סוקולוב 46, הוד השרון, ישראל",
+                          "lat":  32.1688295,
+                          "lng":  34.9014608,
+                          "phone":  "",
+                          "rating":  null,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A8%D7%A4%D7%95%D7%90%D7%99%20%D7%94%D7%9E%D7%95%D7%A9%D7%91%D7%94%20-%20%D7%9E%D7%95%D7%A7%D7%93%20%D7%91%D7%93%D7%99%D7%A7%D7%95%D7%AA%20%D7%9E%D7%A2%D7%91%D7%93%D7%94%20-%20%D7%94%D7%95%D7%93%20%D7%94%D7%A9%D7%A8%D7%95%D7%9F\u0026query_place_id=ChIJL1iKAME5HRURpoZ8Piw0wFQ"
+                      }
+                  ],
+    "טבריה":  [
+                  {
+                      "name":  "פנוחכם",
+                      "address":  "הגליל 52, קומה 4, טבריה, ישראל",
+                      "lat":  32.7842076,
+                      "lng":  35.541299,
+                      "phone":  "+972 4-821-1100",
+                      "rating":  3.8,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A4%D7%A0%D7%95%D7%97%D7%9B%D7%9D\u0026query_place_id=ChIJAQB7NUo-HBURYOBh1tSUG_A"
+                  },
+                  {
+                      "name":  "פנוחכם",
+                      "address":  "אילת 8, טבריה, ישראל",
+                      "lat":  32.7891224,
+                      "lng":  35.5393101,
+                      "phone":  "+972 4-672-2686",
+                      "rating":  4.1,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A4%D7%A0%D7%95%D7%97%D7%9B%D7%9D\u0026query_place_id=ChIJ2bblp08-HBURI-BNabPKJqk"
+                  },
+                  {
+                      "name":  "רקתי - מכון רנטגן/הדמיה - טבריה",
+                      "address":  "החשמונאים 1, קומה קרקע, טבריה, ישראל",
+                      "lat":  32.7920101,
+                      "lng":  35.5253027,
+                      "phone":  "+972 4-672-9410",
+                      "rating":  null,
+                      "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A8%D7%A7%D7%AA%D7%99%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%98%D7%91%D7%A8%D7%99%D7%94\u0026query_place_id=ChIJsUXIuN4_HBUREnqCc0qNuLs"
+                  }
+              ],
+    "צפת":  [
+                {
+                    "name":  "פנוחכם",
+                    "address":  "הגדוד השלישי 2, צפת, ישראל",
+                    "lat":  32.9717846,
+                    "lng":  35.5044021,
+                    "phone":  "+972 4-693-6062",
+                    "rating":  3.5,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A4%D7%A0%D7%95%D7%97%D7%9B%D7%9D\u0026query_place_id=ChIJiVT0UH5MHRURlL2MJdwqhhA"
+                },
+                {
+                    "name":  "מרכז מומחים - מכון רנטגן/הדמיה - צפת",
+                    "address":  "קניון שערי העיר, הגדוד השלישי, צפת, ישראל",
+                    "lat":  32.9716023,
+                    "lng":  35.5046505,
+                    "phone":  "+972 4-660-5511",
+                    "rating":  null,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20-%20%D7%9E%D7%9B%D7%95%D7%9F%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%2F%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%A6%D7%A4%D7%AA\u0026query_place_id=ChIJUZ0Qh40jHBURGPzVOIjLIWY"
+                },
+                {
+                    "name":  "שנהב",
+                    "address":  "הר גלבוע 10, צפת, ישראל",
+                    "lat":  32.9639902,
+                    "lng":  35.5143295,
+                    "phone":  "+972 4-644-4404",
+                    "rating":  5,
+                    "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%A9%D7%A0%D7%94%D7%91\u0026query_place_id=ChIJ-5r_-LYjHBUR7F4NTm2qob8"
+                }
+            ],
+    "קריית אתא":  [
+                      {
+                          "name":  "מעבדות זר",
+                          "address":  "דרך עכו 140, קריית ביאליק, ישראל",
+                          "lat":  32.8364905,
+                          "lng":  35.0853125,
+                          "phone":  "",
+                          "rating":  null,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA%20%D7%96%D7%A8\u0026query_place_id=ChIJQW9BQeK2HRURm6EXJ4ViZWc"
+                      },
+                      {
+                          "name":  "מרכז מומחים זבולון - רנטגן והדמיה - קרית ביאליק",
+                          "address":  "המייסדים 7 בנין מס\u0027 1, קריית ביאליק, ישראל",
+                          "lat":  32.8443017,
+                          "lng":  35.0935174,
+                          "phone":  "+972 4-878-7877",
+                          "rating":  5,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%9E%D7%95%D7%9E%D7%97%D7%99%D7%9D%20%D7%96%D7%91%D7%95%D7%9C%D7%95%D7%9F%20-%20%D7%A8%D7%A0%D7%98%D7%92%D7%9F%20%D7%95%D7%94%D7%93%D7%9E%D7%99%D7%94%20-%20%D7%A7%D7%A8%D7%99%D7%AA%20%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7\u0026query_place_id=ChIJM5z_DUe3HRURFL5YXxzPLFk"
+                      },
+                      {
+                          "name":  "דנטל אי סנטר ️ מרפאת שיניים בקרית אתא, אליק משה מעבדת שיניים בקרית אתא.",
+                          "address":  "מורדי הגטאות 7, קרית אתא, 2850414, ישראל",
+                          "lat":  32.8042784,
+                          "lng":  35.1029704,
+                          "phone":  "+972 72-396-9488",
+                          "rating":  4.6,
+                          "url":  "https://www.google.com/maps/search/?api=1\u0026query=%D7%93%D7%A0%D7%98%D7%9C%20%D7%90%D7%99%20%D7%A1%D7%A0%D7%98%D7%A8%20%EF%B8%8F%20%D7%9E%D7%A8%D7%A4%D7%90%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%91%D7%A7%D7%A8%D7%99%D7%AA%20%D7%90%D7%AA%D7%90%2C%20%D7%90%D7%9C%D7%99%D7%A7%20%D7%9E%D7%A9%D7%94%20%D7%9E%D7%A2%D7%91%D7%93%D7%AA%20%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D%20%D7%91%D7%A7%D7%A8%D7%99%D7%AA%20%D7%90%D7%AA%D7%90.\u0026query_place_id=ChIJY9uQEIS3HRURTleXgrRNNrk"
+                      }
+                  ]
+}
