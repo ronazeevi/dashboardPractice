@@ -99,7 +99,7 @@ a.btn{display:inline-block;padding:10px 20px;border-radius:99px;background:var(-
       <div id="date" class="note"></div>
     </div>
   </div>
-  <div class="note"><b>נתוני דוגמה סינתטיים</b> - המעבדות, העובדים והמספרים הם המצאה להמחשה בלבד, לא נתוני מאוחדת ולא רשימה רשמית. להחלפה בנתונים אמיתיים יש לעדכן את קבצי ה-CSV. כדי להציג לוגו רשמי: לשים קובץ logo.png ליד הדשבורד.</div>
+  <div class="note"><b>נתוני דוגמה סינתטיים</b> - המעבדות, העובדים והמספרים הם המצאה להמחשה בלבד, לא נתוני מאוחדת ולא רשימה רשמית. הנתונים נטענים מבסיס Airtable (נתוני דמו) ומתעדכנים בכל הרצה של ה-Workflow. כדי להציג לוגו רשמי: לשים קובץ logo.png ליד הדשבורד.</div>
 </div></header>
 <main>
   <div class="bar">
@@ -156,15 +156,9 @@ a.btn{display:inline-block;padding:10px 20px;border-radius:99px;background:var(-
     <div class="note">מקור: Apify (Google Maps Scraper) - מעבדות בדיקות דם אמיתיות בסביבת הערים, להמחשה בלבד ולא רשימת המעבדות בדאשבורד. מפה: OpenStreetMap.</div>
   </section>
 
-  <section class="card">
-    <h2>הורדת קבצים</h2>
-    <a class="btn" href="workers.csv" download>כל העובדים (CSV)</a>
-    <a class="btn" href="labs.csv" download>רשימת המעבדות (CSV)</a>
-    <a class="btn" href="monthly_tests.csv" download>בדיקות חודשיות (CSV)</a>
-  </section>
 </main>
 <script>
-let D = __DATA__; // null = no embedded data; filled from Airtable by the token panel
+let D = __DATA__; // data is embedded at build time from Airtable
 const A = __APIFY__; // [city, name, address, lat, lng, phone, rating] from Apify
 const MN = ['ינו','פבר','מרץ','אפר','מאי','יונ','יול','אוג','ספט','אוק','נוב','דצמ'];
 const LAST = {y:2026,m:10};
