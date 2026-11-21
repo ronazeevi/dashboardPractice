@@ -102,16 +102,6 @@ a.btn{display:inline-block;padding:10px 20px;border-radius:99px;background:var(-
   <div class="note"><b>נתוני דוגמה סינתטיים</b> - המעבדות, העובדים והמספרים הם המצאה להמחשה בלבד, לא נתוני מאוחדת ולא רשימה רשמית. להחלפה בנתונים אמיתיים יש לעדכן את קבצי ה-CSV. כדי להציג לוגו רשמי: לשים קובץ logo.png ליד הדשבורד.</div>
 </div></header>
 <main>
-  <section class="card" id="atPanel" hidden>
-    <h2>טעינת נתונים מ-Airtable</h2>
-    <p class="note">מזינים טוקן אישי (Personal access token) ו-Base ID. הטוקן נשאר בזיכרון הדף בלבד ולא נשמר בשום מקום.</p>
-    <div class="tf">
-      <label>טוקן<input id="atToken" type="password" autocomplete="off" placeholder="pat..."></label>
-      <label>Base ID<input id="atBase" placeholder="app..."></label>
-      <button class="btn" id="atBtn" type="button" style="border:0;cursor:pointer">טען נתונים</button>
-    </div>
-    <div class="note" id="atMsg"></div>
-  </section>
   <div class="bar">
     <div class="seg" id="viewSeg"><button data-v="month" class="on">חודשי</button><button data-v="year">שנתי</button></div>
     <label>שנה<select id="year"></select></label>
@@ -480,54 +470,7 @@ function initNear(){
   s.onload=initNear;s.onerror=()=>{$('map').style.display='none';initNear();};document.head.appendChild(s);
 })();
 
-// ---- option 1: load the data from Airtable in the browser (token typed in, never stored) ----
-async function airtableAll(table, token, base){
-  const out=[]; let offset='';
-  do{
-    const url=`https://api.airtable.com/v0/${encodeURIComponent(base)}/${encodeURIComponent(table)}?pageSize=100`+(offset?`&offset=${encodeURIComponent(offset)}`:'');
-    const r=await fetch(url,{headers:{Authorization:'Bearer '+token}});
-    if(!r.ok) throw new Error(`${table}: ${r.status} ${(await r.text()).slice(0,160)}`);
-    const j=await r.json();
-    for(const rec of j.records) out.push({id:rec.id, f:Object.fromEntries(Object.entries(rec.fields||{}).map(([k,v])=>[k.trim().toLowerCase().replace(/\s+/g,'_'),v]))});
-    offset=j.offset||'';
-  }while(offset);
-  return out;
-}
-function monthOf(p){
-  p=String(p??'').trim(); let m;
-  if((m=p.match(/^(\d{4})[-/.](\d{1,2})/))) return +m[2];
-  if((m=p.match(/^(\d{1,2})[-/.](\d{4})/))) return +m[1];
-  if(/^\d{1,2}$/.test(p)) return +p;
-  const i=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(p.slice(0,3).toLowerCase());
-  if(i>=0) return i+1;
-  throw new Error('לא הצלחתי לקרוא חודש מהערך: '+p);
-}
-async function loadAirtable(token, base){
-  const [L,W,T]=await Promise.all([airtableAll('Labs',token,base),airtableAll('Workers',token,base),airtableAll('Monthly Tests',token,base)]);
-  const labs=L.map(r=>({rid:r.id,lab_id:String(r.f.lab_id??''),lab_name:r.f.lab_name??'',city:r.f.city??'',region:r.f.region??''})).sort((a,b)=>a.lab_id.localeCompare(b.lab_id));
-  const idx={}, rid={};
-  labs.forEach((l,i)=>{idx[l.lab_id]=i; rid[l.rid]=l.lab_id;});
-  const labOf=v=>{ if(Array.isArray(v)) v=v[0]; return idx[rid[v]??String(v)]; };
-  const workers=W.map(r=>[r.f.worker_id, r.f.full_name, r.f.role, labOf(r.f.lab)]).filter(w=>w[3]!==undefined);
-  const rows=T.map(r=>[labOf(r.f.lab), +r.f.year, monthOf(r.f.period), +r.f.tests, +r.f.avg_turnaround_hours, +r.f['abnormal_%']]).filter(x=>x[0]!==undefined);
-  return {labs:labs.map(l=>[l.lab_id,l.lab_name,l.city,l.region]), workers, rows};
-}
-$('atBtn').onclick=async()=>{
-  const t=$('atToken').value.trim(), b=$('atBase').value.trim();
-  if(!t||!b){ $('atMsg').textContent='צריך למלא טוקן ו-Base ID'; return; }
-  $('atMsg').textContent='טוען מ-Airtable...';
-  try{
-    D=await loadAirtable(t,b);
-    $('atToken').value='';
-    start();
-    $('atMsg').textContent=`נטענו ${D.labs.length} מעבדות, ${D.workers.length} עובדים, ${D.rows.length} שורות בדיקות. הטוקן לא נשמר.`;
-  }catch(e){
-    $('atMsg').textContent='שגיאה: '+e.message+' (אם השגיאה היא על CORS או הרשאות, ראו את אפשרות 2 - GitHub Actions).';
-  }
-};
-// boot: embedded data (built from Airtable or the sample CSVs) starts the dashboard; otherwise ask for a token
-$('atPanel').hidden=false;
-if(D){ start(); } else { $('atMsg').textContent='אין נתונים מוטמעים. הזינו טוקן כדי להציג את הדשבורד.'; }
+start();
 </script>
 </body>
 </html>
