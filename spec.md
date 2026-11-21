@@ -13,6 +13,7 @@
 7. **גרף עוגה** - התפלגות בדיקות לפי אזור בשנה שנבחרה.
 8. **טבלאות** - מעבדות (לפי תקופה) ועובדים (עם חיפוש).
 9. **קבצי CSV** - `workers.csv` (כל העובדים), `labs.csv` (כל המעבדות בארץ), `monthly_tests.csv` (בדיקות חודשיות).
+10. **מקור נתונים מ-Airtable** (בסיס "MUEHEDET BASE", טבלאות Labs, Workers, Monthly Tests). שתי אפשרויות: (א) מסך להזנת טוקן אישי והצגת הנתונים בדפדפן, בלי לשמור את הטוקן; (ב) GitHub Actions שמושך את הנתונים עם Secrets (`AIRTABLE_TOKEN`, `AIRTABLE_BASE_ID`) ובונה מחדש את `dashboard-output/dashboard.html`. הדף החי (`index.html`) מפנה ל-`dashboard-output/dashboard.html`.
 
 ## מבנה נתונים
 | קובץ | שדות |
